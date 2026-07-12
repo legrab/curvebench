@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "spring-extension",
+  "title": "Spring extension under load",
+  "shortDescription": "A mostly linear elastic region with high-load deviation.",
+  "description": "Synthetic extension measurements for a spring that begins to depart from ideal linear behavior near the upper load range.",
+  "dimension": "2d",
+  "category": "physics",
+  "tags": [
+    "hooke",
+    "linear",
+    "elasticity"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Force",
+      "unit": "N"
+    },
+    "y": {
+      "key": "y",
+      "label": "Extension",
+      "unit": "cm"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 0.060068583
+    },
+    {
+      "x": 0.5,
+      "y": 0.30755737
+    },
+    {
+      "x": 1,
+      "y": 0.71101771
+    },
+    {
+      "x": 1.5,
+      "y": 1.2118366
+    },
+    {
+      "x": 2,
+      "y": 1.6347623
+    },
+    {
+      "x": 2.5,
+      "y": 2.2270129
+    },
+    {
+      "x": 3,
+      "y": 2.5003772
+    },
+    {
+      "x": 3.5,
+      "y": 3.1029287
+    },
+    {
+      "x": 4,
+      "y": 3.6752377
+    },
+    {
+      "x": 4.5,
+      "y": 4.205987
+    },
+    {
+      "x": 5,
+      "y": 4.8665929
+    },
+    {
+      "x": 5.5,
+      "y": 5.469948
+    },
+    {
+      "x": 6,
+      "y": 6.1779301
+    },
+    {
+      "x": 6.5,
+      "y": 6.9198646
+    },
+    {
+      "x": 7,
+      "y": 7.8188914
+    },
+    {
+      "x": 7.5,
+      "y": 8.696654
+    },
+    {
+      "x": 8,
+      "y": 9.6387878
+    },
+    {
+      "x": 8.5,
+      "y": 10.653043
+    },
+    {
+      "x": 9,
+      "y": 11.738683
+    },
+    {
+      "x": 9.5,
+      "y": 12.987751
+    },
+    {
+      "x": 10,
+      "y": 14.214288
+    },
+    {
+      "x": 10.5,
+      "y": 15.54347
+    },
+    {
+      "x": 11,
+      "y": 17.09199
+    },
+    {
+      "x": 11.5,
+      "y": 18.550928
+    },
+    {
+      "x": 12,
+      "y": 20.183147
+    }
+  ],
+  "recommendedModels": [
+    "linear",
+    "polynomial",
+    "cubic-spline"
+  ],
+  "generation": {
+    "seed": 2003,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Linear response with weak cubic deviation."
+  }
+}

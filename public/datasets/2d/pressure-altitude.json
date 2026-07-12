@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "pressure-altitude",
+  "title": "Atmospheric pressure versus altitude",
+  "shortDescription": "An exponential-like decrease with altitude.",
+  "description": "Synthetic school-example pressure values over a moderate altitude range.",
+  "dimension": "2d",
+  "category": "environment",
+  "tags": [
+    "pressure",
+    "altitude",
+    "exponential"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Altitude",
+      "unit": "m"
+    },
+    "y": {
+      "key": "y",
+      "label": "Pressure",
+      "unit": "kPa"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 102.59664
+    },
+    {
+      "x": 200,
+      "y": 99.470146
+    },
+    {
+      "x": 400,
+      "y": 95.96395
+    },
+    {
+      "x": 600,
+      "y": 94.877294
+    },
+    {
+      "x": 800,
+      "y": 91.995092
+    },
+    {
+      "x": 1000,
+      "y": 90.534232
+    },
+    {
+      "x": 1200,
+      "y": 86.702359
+    },
+    {
+      "x": 1400,
+      "y": 85.16614
+    },
+    {
+      "x": 1600,
+      "y": 84.046732
+    },
+    {
+      "x": 1800,
+      "y": 81.941794
+    },
+    {
+      "x": 2000,
+      "y": 80.662216
+    },
+    {
+      "x": 2200,
+      "y": 77.754295
+    },
+    {
+      "x": 2400,
+      "y": 74.401351
+    },
+    {
+      "x": 2600,
+      "y": 74.368057
+    },
+    {
+      "x": 2800,
+      "y": 72.255963
+    },
+    {
+      "x": 3000,
+      "y": 69.810813
+    },
+    {
+      "x": 3200,
+      "y": 68.357497
+    },
+    {
+      "x": 3400,
+      "y": 67.418281
+    },
+    {
+      "x": 3600,
+      "y": 64.81207
+    },
+    {
+      "x": 3800,
+      "y": 62.573156
+    },
+    {
+      "x": 4000,
+      "y": 62.458378
+    },
+    {
+      "x": 4200,
+      "y": 61.702192
+    },
+    {
+      "x": 4400,
+      "y": 59.19125
+    },
+    {
+      "x": 4600,
+      "y": 58.659948
+    },
+    {
+      "x": 4800,
+      "y": 57.466057
+    },
+    {
+      "x": 5000,
+      "y": 56.523169
+    },
+    {
+      "x": 5200,
+      "y": 54.677267
+    },
+    {
+      "x": 5400,
+      "y": 52.483669
+    },
+    {
+      "x": 5600,
+      "y": 52.965395
+    },
+    {
+      "x": 5800,
+      "y": 51.005724
+    },
+    {
+      "x": 6000,
+      "y": 50.830707
+    },
+    {
+      "x": 6200,
+      "y": 48.84186
+    },
+    {
+      "x": 6400,
+      "y": 46.69824
+    },
+    {
+      "x": 6600,
+      "y": 45.374278
+    },
+    {
+      "x": 6800,
+      "y": 43.133799
+    },
+    {
+      "x": 7000,
+      "y": 45.186678
+    }
+  ],
+  "recommendedModels": [
+    "exponential",
+    "cubic-spline",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 3409,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Simplified exponential atmosphere."
+  }
+}

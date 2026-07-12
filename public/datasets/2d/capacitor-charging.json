@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "capacitor-charging",
+  "title": "Capacitor charging",
+  "shortDescription": "Exponential approach to a supply voltage.",
+  "description": "Synthetic voltage measurements for a charging RC circuit.",
+  "dimension": "2d",
+  "category": "electronics",
+  "tags": [
+    "circuit",
+    "charging",
+    "exponential"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Time",
+      "unit": "s"
+    },
+    "y": {
+      "key": "y",
+      "label": "Voltage",
+      "unit": "V"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": -0.0068090617
+    },
+    {
+      "x": 0.16666667,
+      "y": 0.84424218
+    },
+    {
+      "x": 0.33333333,
+      "y": 1.5267006
+    },
+    {
+      "x": 0.5,
+      "y": 2.1337851
+    },
+    {
+      "x": 0.66666667,
+      "y": 2.5506819
+    },
+    {
+      "x": 0.83333333,
+      "y": 3.0595863
+    },
+    {
+      "x": 1,
+      "y": 3.3316143
+    },
+    {
+      "x": 1.1666667,
+      "y": 3.6140242
+    },
+    {
+      "x": 1.3333333,
+      "y": 3.8523865
+    },
+    {
+      "x": 1.5,
+      "y": 4.0266547
+    },
+    {
+      "x": 1.6666667,
+      "y": 4.1977169
+    },
+    {
+      "x": 1.8333333,
+      "y": 4.316417
+    },
+    {
+      "x": 2,
+      "y": 4.4610112
+    },
+    {
+      "x": 2.1666667,
+      "y": 4.5676583
+    },
+    {
+      "x": 2.3333333,
+      "y": 4.639181
+    },
+    {
+      "x": 2.5,
+      "y": 4.7377787
+    },
+    {
+      "x": 2.6666667,
+      "y": 4.728508
+    },
+    {
+      "x": 2.8333333,
+      "y": 4.7774193
+    },
+    {
+      "x": 3,
+      "y": 4.7910965
+    },
+    {
+      "x": 3.1666667,
+      "y": 4.8898682
+    },
+    {
+      "x": 3.3333333,
+      "y": 4.898209
+    },
+    {
+      "x": 3.5,
+      "y": 4.8970915
+    },
+    {
+      "x": 3.6666667,
+      "y": 4.9196448
+    },
+    {
+      "x": 3.8333333,
+      "y": 4.9065265
+    },
+    {
+      "x": 4,
+      "y": 4.9245779
+    },
+    {
+      "x": 4.1666667,
+      "y": 5.000317
+    },
+    {
+      "x": 4.3333333,
+      "y": 4.997062
+    },
+    {
+      "x": 4.5,
+      "y": 5.0051359
+    },
+    {
+      "x": 4.6666667,
+      "y": 4.9667416
+    },
+    {
+      "x": 4.8333333,
+      "y": 4.9779254
+    },
+    {
+      "x": 5,
+      "y": 4.9858277
+    }
+  ],
+  "recommendedModels": [
+    "exponential",
+    "cubic-spline",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 1902,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "RC charging curve."
+  }
+}

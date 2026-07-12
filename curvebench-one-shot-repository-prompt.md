@@ -274,19 +274,12 @@ export interface ModelStrategy<TParameters extends ModelParameters = ModelParame
 
   createDefaultParameters(dataset: Dataset): TParameters;
   validateParameters(parameters: unknown): TParameters;
-  createTrace(
-    dataset: Dataset,
-    parameters: TParameters,
-    sampling: SamplingContext
-  ): PlotTrace[];
-  predict?(
-    input: PredictionInput,
-    parameters: TParameters
-  ): number | PredictionPoint;
+  createTrace(dataset: Dataset, parameters: TParameters, sampling: SamplingContext): PlotTrace[];
+  predict?(input: PredictionInput, parameters: TParameters): number | PredictionPoint;
   fit?(
     dataset: Dataset,
     initialParameters: TParameters,
-    options: FitOptions
+    options: FitOptions,
   ): FitResult<TParameters>;
 }
 ```

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "id": "bacterial-culture-growth",
+  "title": "Bacterial culture growth",
+  "shortDescription": "Lag, rapid growth, and carrying-capacity plateau.",
+  "description": "Synthetic optical-density measurements for a culture with a short lag phase and a logistic plateau.",
+  "dimension": "2d",
+  "category": "biology",
+  "tags": [
+    "population",
+    "logistic",
+    "laboratory"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Time",
+      "unit": "h"
+    },
+    "y": {
+      "key": "y",
+      "label": "Optical density",
+      "unit": "a.u."
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 0.027153109
+    },
+    {
+      "x": 0.5,
+      "y": 0.049842498
+    },
+    {
+      "x": 1,
+      "y": 0.051112418
+    },
+    {
+      "x": 1.5,
+      "y": 0.086104265
+    },
+    {
+      "x": 2,
+      "y": 0.066175451
+    },
+    {
+      "x": 2.5,
+      "y": 0.047321357
+    },
+    {
+      "x": 3,
+      "y": 0.058970768
+    },
+    {
+      "x": 3.5,
+      "y": 0.09050958
+    },
+    {
+      "x": 4,
+      "y": 0.10667016
+    },
+    {
+      "x": 4.5,
+      "y": 0.12755504
+    },
+    {
+      "x": 5,
+      "y": 0.1307781
+    },
+    {
+      "x": 5.5,
+      "y": 0.16120183
+    },
+    {
+      "x": 6,
+      "y": 0.25256424
+    },
+    {
+      "x": 6.5,
+      "y": 0.32669092
+    },
+    {
+      "x": 7,
+      "y": 0.4194144
+    },
+    {
+      "x": 7.5,
+      "y": 0.55423969
+    },
+    {
+      "x": 8,
+      "y": 0.64038599
+    },
+    {
+      "x": 8.5,
+      "y": 0.76778034
+    },
+    {
+      "x": 9,
+      "y": 0.85062477
+    },
+    {
+      "x": 9.5,
+      "y": 1.0188369
+    },
+    {
+      "x": 10,
+      "y": 1.0597364
+    },
+    {
+      "x": 10.5,
+      "y": 1.1544141
+    },
+    {
+      "x": 11,
+      "y": 1.2277054
+    },
+    {
+      "x": 11.5,
+      "y": 1.2999985
+    },
+    {
+      "x": 12,
+      "y": 1.3157226
+    },
+    {
+      "x": 12.5,
+      "y": 1.3749458
+    },
+    {
+      "x": 13,
+      "y": 1.3614873
+    },
+    {
+      "x": 13.5,
+      "y": 1.4122343
+    },
+    {
+      "x": 14,
+      "y": 1.3989916
+    },
+    {
+      "x": 14.5,
+      "y": 1.4248096
+    },
+    {
+      "x": 15,
+      "y": 1.4286206
+    },
+    {
+      "x": 15.5,
+      "y": 1.4034014
+    },
+    {
+      "x": 16,
+      "y": 1.4209337
+    },
+    {
+      "x": 16.5,
+      "y": 1.4373761
+    },
+    {
+      "x": 17,
+      "y": 1.3996499
+    },
+    {
+      "x": 17.5,
+      "y": 1.4061432
+    },
+    {
+      "x": 18,
+      "y": 1.3996831
+    }
+  ],
+  "recommendedModels": [
+    "logistic",
+    "cubic-spline",
+    "exponential"
+  ],
+  "generation": {
+    "seed": 1604,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Logistic growth with baseline."
+  }
+}

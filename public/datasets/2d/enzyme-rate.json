@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "enzyme-rate",
+  "title": "Enzyme reaction rate",
+  "shortDescription": "A saturating response to substrate concentration.",
+  "description": "Synthetic Michaelis-Menten-like reaction-rate measurements.",
+  "dimension": "2d",
+  "category": "chemistry",
+  "tags": [
+    "saturation",
+    "enzyme",
+    "laboratory"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Substrate concentration",
+      "unit": "mM"
+    },
+    "y": {
+      "key": "y",
+      "label": "Reaction rate",
+      "unit": "a.u./min"
+    }
+  },
+  "points": [
+    {
+      "x": 0.1,
+      "y": 1.7819958
+    },
+    {
+      "x": 0.67741935,
+      "y": 21.553728
+    },
+    {
+      "x": 1.2548387,
+      "y": 32.601335
+    },
+    {
+      "x": 1.8322581,
+      "y": 45.255796
+    },
+    {
+      "x": 2.4096774,
+      "y": 49.28222
+    },
+    {
+      "x": 2.9870968,
+      "y": 57.294879
+    },
+    {
+      "x": 3.5645161,
+      "y": 61.531431
+    },
+    {
+      "x": 4.1419355,
+      "y": 65.662444
+    },
+    {
+      "x": 4.7193548,
+      "y": 68.595472
+    },
+    {
+      "x": 5.2967742,
+      "y": 71.324495
+    },
+    {
+      "x": 5.8741935,
+      "y": 75.518612
+    },
+    {
+      "x": 6.4516129,
+      "y": 80.002489
+    },
+    {
+      "x": 7.0290323,
+      "y": 81.299928
+    },
+    {
+      "x": 7.6064516,
+      "y": 82.996734
+    },
+    {
+      "x": 8.183871,
+      "y": 84.517221
+    },
+    {
+      "x": 8.7612903,
+      "y": 84.117261
+    },
+    {
+      "x": 9.3387097,
+      "y": 86.083656
+    },
+    {
+      "x": 9.916129,
+      "y": 87.520745
+    },
+    {
+      "x": 10.493548,
+      "y": 88.908777
+    },
+    {
+      "x": 11.070968,
+      "y": 90.370778
+    },
+    {
+      "x": 11.648387,
+      "y": 95.32475
+    },
+    {
+      "x": 12.225806,
+      "y": 95.539637
+    },
+    {
+      "x": 12.803226,
+      "y": 94.444373
+    },
+    {
+      "x": 13.380645,
+      "y": 91.044604
+    },
+    {
+      "x": 13.958065,
+      "y": 97.697672
+    },
+    {
+      "x": 14.535484,
+      "y": 95.326309
+    },
+    {
+      "x": 15.112903,
+      "y": 95.785928
+    },
+    {
+      "x": 15.690323,
+      "y": 98.682008
+    },
+    {
+      "x": 16.267742,
+      "y": 99.183302
+    },
+    {
+      "x": 16.845161,
+      "y": 101.56611
+    },
+    {
+      "x": 17.422581,
+      "y": 101.04884
+    },
+    {
+      "x": 18,
+      "y": 100.11271
+    }
+  ],
+  "recommendedModels": [
+    "logistic",
+    "cubic-spline",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 2404,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Michaelis-Menten-like saturation."
+  }
+}

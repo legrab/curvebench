@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "sunflower-growth",
+  "title": "Sunflower height over a growing season",
+  "shortDescription": "Logistic-like growth with mild measurement variation.",
+  "description": "Synthetic plant-height observations over a ninety-day growing period.",
+  "dimension": "2d",
+  "category": "biology",
+  "tags": [
+    "plant",
+    "logistic",
+    "growth"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Day",
+      "unit": "d"
+    },
+    "y": {
+      "key": "y",
+      "label": "Height",
+      "unit": "cm"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 5.5201837
+    },
+    {
+      "x": 3,
+      "y": 4.0754415
+    },
+    {
+      "x": 6,
+      "y": 2.1848509
+    },
+    {
+      "x": 9,
+      "y": 6.1857623
+    },
+    {
+      "x": 12,
+      "y": 9.3375523
+    },
+    {
+      "x": 15,
+      "y": 12.518025
+    },
+    {
+      "x": 18,
+      "y": 14.075761
+    },
+    {
+      "x": 21,
+      "y": 17.063425
+    },
+    {
+      "x": 24,
+      "y": 22.734621
+    },
+    {
+      "x": 27,
+      "y": 29.727681
+    },
+    {
+      "x": 30,
+      "y": 38.615058
+    },
+    {
+      "x": 33,
+      "y": 46.501239
+    },
+    {
+      "x": 36,
+      "y": 52.92208
+    },
+    {
+      "x": 39,
+      "y": 72.275857
+    },
+    {
+      "x": 42,
+      "y": 82.762468
+    },
+    {
+      "x": 45,
+      "y": 97.919273
+    },
+    {
+      "x": 48,
+      "y": 110.83269
+    },
+    {
+      "x": 51,
+      "y": 125.60782
+    },
+    {
+      "x": 54,
+      "y": 137.60924
+    },
+    {
+      "x": 57,
+      "y": 152.99797
+    },
+    {
+      "x": 60,
+      "y": 163.62344
+    },
+    {
+      "x": 63,
+      "y": 170.8235
+    },
+    {
+      "x": 66,
+      "y": 177.91895
+    },
+    {
+      "x": 69,
+      "y": 185.39643
+    },
+    {
+      "x": 72,
+      "y": 187.24005
+    },
+    {
+      "x": 75,
+      "y": 193.19666
+    },
+    {
+      "x": 78,
+      "y": 197.47972
+    },
+    {
+      "x": 81,
+      "y": 195.51766
+    },
+    {
+      "x": 84,
+      "y": 199.99499
+    },
+    {
+      "x": 87,
+      "y": 201.13283
+    },
+    {
+      "x": 90,
+      "y": 201.59052
+    }
+  ],
+  "recommendedModels": [
+    "logistic",
+    "cubic-spline",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 1501,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Logistic growth."
+  }
+}

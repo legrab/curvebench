@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "bouncing-ball",
+  "title": "Bouncing ball peak height",
+  "shortDescription": "Geometric decay by bounce number.",
+  "description": "Synthetic peak heights from successive bounces of a ball.",
+  "dimension": "2d",
+  "category": "physics",
+  "tags": [
+    "decay",
+    "geometric",
+    "bounce"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Bounce number",
+      "unit": ""
+    },
+    "y": {
+      "key": "y",
+      "label": "Peak height",
+      "unit": "m"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 2.3596698
+    },
+    {
+      "x": 1,
+      "y": 1.7230834
+    },
+    {
+      "x": 2,
+      "y": 1.2616364
+    },
+    {
+      "x": 3,
+      "y": 0.88540324
+    },
+    {
+      "x": 4,
+      "y": 0.67300208
+    },
+    {
+      "x": 5,
+      "y": 0.50762105
+    },
+    {
+      "x": 6,
+      "y": 0.36398517
+    },
+    {
+      "x": 7,
+      "y": 0.25433561
+    },
+    {
+      "x": 8,
+      "y": 0.19320028
+    },
+    {
+      "x": 9,
+      "y": 0.14418168
+    },
+    {
+      "x": 10,
+      "y": 0.092461735
+    },
+    {
+      "x": 11,
+      "y": 0.087874512
+    },
+    {
+      "x": 12,
+      "y": 0.060879602
+    },
+    {
+      "x": 13,
+      "y": 0.067308849
+    },
+    {
+      "x": 14,
+      "y": 0.063305149
+    },
+    {
+      "x": 15,
+      "y": 0.020242764
+    }
+  ],
+  "recommendedModels": [
+    "exponential",
+    "cubic-spline",
+    "power-law"
+  ],
+  "generation": {
+    "seed": 3501,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Geometric decay."
+  }
+}

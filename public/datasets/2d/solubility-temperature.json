@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "solubility-temperature",
+  "title": "Solubility versus temperature",
+  "shortDescription": "A nonlinear increase with temperature.",
+  "description": "Synthetic solubility measurements for a fictional compound.",
+  "dimension": "2d",
+  "category": "chemistry",
+  "tags": [
+    "temperature",
+    "solubility",
+    "nonlinear"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Temperature",
+      "unit": "°C"
+    },
+    "y": {
+      "key": "y",
+      "label": "Solubility",
+      "unit": "g/100 mL"
+    }
+  },
+  "points": [
+    {
+      "x": 5,
+      "y": 10.459391
+    },
+    {
+      "x": 7.9310345,
+      "y": 8.6265689
+    },
+    {
+      "x": 10.862069,
+      "y": 10.5956
+    },
+    {
+      "x": 13.793103,
+      "y": 11.7259
+    },
+    {
+      "x": 16.724138,
+      "y": 12.96682
+    },
+    {
+      "x": 19.655172,
+      "y": 11.902595
+    },
+    {
+      "x": 22.586207,
+      "y": 15.392581
+    },
+    {
+      "x": 25.517241,
+      "y": 15.33086
+    },
+    {
+      "x": 28.448276,
+      "y": 17.182919
+    },
+    {
+      "x": 31.37931,
+      "y": 17.420461
+    },
+    {
+      "x": 34.310345,
+      "y": 19.045368
+    },
+    {
+      "x": 37.241379,
+      "y": 21.840357
+    },
+    {
+      "x": 40.172414,
+      "y": 21.674122
+    },
+    {
+      "x": 43.103448,
+      "y": 21.420261
+    },
+    {
+      "x": 46.034483,
+      "y": 26.043202
+    },
+    {
+      "x": 48.965517,
+      "y": 26.599622
+    },
+    {
+      "x": 51.896552,
+      "y": 28.912454
+    },
+    {
+      "x": 54.827586,
+      "y": 30.528262
+    },
+    {
+      "x": 57.758621,
+      "y": 32.124719
+    },
+    {
+      "x": 60.689655,
+      "y": 33.122356
+    },
+    {
+      "x": 63.62069,
+      "y": 34.188069
+    },
+    {
+      "x": 66.551724,
+      "y": 39.144514
+    },
+    {
+      "x": 69.482759,
+      "y": 40.56924
+    },
+    {
+      "x": 72.413793,
+      "y": 42.802613
+    },
+    {
+      "x": 75.344828,
+      "y": 43.731857
+    },
+    {
+      "x": 78.275862,
+      "y": 47.173039
+    },
+    {
+      "x": 81.206897,
+      "y": 49.996362
+    },
+    {
+      "x": 84.137931,
+      "y": 52.349831
+    },
+    {
+      "x": 87.068966,
+      "y": 55.743524
+    },
+    {
+      "x": 90,
+      "y": 58.310947
+    }
+  ],
+  "recommendedModels": [
+    "polynomial",
+    "cubic-spline",
+    "exponential"
+  ],
+  "generation": {
+    "seed": 2805,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Quadratic-like temperature dependence."
+  }
+}

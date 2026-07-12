@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "infant-weight-first-year",
+  "title": "Infant weight during the first year",
+  "shortDescription": "A synthetic early weight trajectory with slowing growth.",
+  "description": "Synthetic monthly measurements showing rapid early gain and a gradually decreasing growth rate.",
+  "dimension": "2d",
+  "category": "biology",
+  "tags": [
+    "growth",
+    "infancy",
+    "saturation"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Age",
+      "unit": "months"
+    },
+    "y": {
+      "key": "y",
+      "label": "Weight",
+      "unit": "kg"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 3.4288448
+    },
+    {
+      "x": 0.5,
+      "y": 3.8542486
+    },
+    {
+      "x": 1,
+      "y": 4.693777
+    },
+    {
+      "x": 1.5,
+      "y": 5.1456555
+    },
+    {
+      "x": 2,
+      "y": 5.4738386
+    },
+    {
+      "x": 2.5,
+      "y": 6.0359415
+    },
+    {
+      "x": 3,
+      "y": 6.4543089
+    },
+    {
+      "x": 3.5,
+      "y": 6.6809555
+    },
+    {
+      "x": 4,
+      "y": 7.1078474
+    },
+    {
+      "x": 4.5,
+      "y": 7.4204142
+    },
+    {
+      "x": 5,
+      "y": 7.6878798
+    },
+    {
+      "x": 5.5,
+      "y": 7.9450724
+    },
+    {
+      "x": 6,
+      "y": 8.1899432
+    },
+    {
+      "x": 6.5,
+      "y": 8.4678287
+    },
+    {
+      "x": 7,
+      "y": 8.511706
+    },
+    {
+      "x": 7.5,
+      "y": 8.5944774
+    },
+    {
+      "x": 8,
+      "y": 8.9123774
+    },
+    {
+      "x": 8.5,
+      "y": 9.0729779
+    },
+    {
+      "x": 9,
+      "y": 9.3088809
+    },
+    {
+      "x": 9.5,
+      "y": 9.356373
+    },
+    {
+      "x": 10,
+      "y": 9.5046737
+    },
+    {
+      "x": 10.5,
+      "y": 9.597888
+    },
+    {
+      "x": 11,
+      "y": 9.787485
+    },
+    {
+      "x": 11.5,
+      "y": 9.7958201
+    },
+    {
+      "x": 12,
+      "y": 9.800068
+    }
+  ],
+  "recommendedModels": [
+    "cubic-spline",
+    "logistic",
+    "exponential"
+  ],
+  "generation": {
+    "seed": 1412,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Saturating growth with a small early dip."
+  }
+}

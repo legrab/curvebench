@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "sound-level-distance",
+  "title": "Sound level versus distance",
+  "shortDescription": "A logarithmic decline with distance.",
+  "description": "Synthetic sound-level observations in an unobstructed setting. Not an acoustic compliance model.",
+  "dimension": "2d",
+  "category": "physics",
+  "tags": [
+    "sound",
+    "logarithmic",
+    "distance"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Distance",
+      "unit": "m"
+    },
+    "y": {
+      "key": "y",
+      "label": "Sound level",
+      "unit": "dB-like"
+    }
+  },
+  "points": [
+    {
+      "x": 1,
+      "y": 91.378918
+    },
+    {
+      "x": 3.5483871,
+      "y": 80.641775
+    },
+    {
+      "x": 6.0967742,
+      "y": 74.672276
+    },
+    {
+      "x": 8.6451613,
+      "y": 72.562565
+    },
+    {
+      "x": 11.193548,
+      "y": 69.627525
+    },
+    {
+      "x": 13.741935,
+      "y": 68.503371
+    },
+    {
+      "x": 16.290323,
+      "y": 66.48885
+    },
+    {
+      "x": 18.83871,
+      "y": 64.315715
+    },
+    {
+      "x": 21.387097,
+      "y": 64.175336
+    },
+    {
+      "x": 23.935484,
+      "y": 63.312169
+    },
+    {
+      "x": 26.483871,
+      "y": 62.915773
+    },
+    {
+      "x": 29.032258,
+      "y": 62.46708
+    },
+    {
+      "x": 31.580645,
+      "y": 61.47014
+    },
+    {
+      "x": 34.129032,
+      "y": 61.208784
+    },
+    {
+      "x": 36.677419,
+      "y": 58.889143
+    },
+    {
+      "x": 39.225806,
+      "y": 58.68478
+    },
+    {
+      "x": 41.774194,
+      "y": 58.653575
+    },
+    {
+      "x": 44.322581,
+      "y": 58.235692
+    },
+    {
+      "x": 46.870968,
+      "y": 57.583145
+    },
+    {
+      "x": 49.419355,
+      "y": 56.390863
+    },
+    {
+      "x": 51.967742,
+      "y": 56.9166
+    },
+    {
+      "x": 54.516129,
+      "y": 56.020164
+    },
+    {
+      "x": 57.064516,
+      "y": 55.534783
+    },
+    {
+      "x": 59.612903,
+      "y": 56.06489
+    },
+    {
+      "x": 62.16129,
+      "y": 55.545879
+    },
+    {
+      "x": 64.709677,
+      "y": 54.832175
+    },
+    {
+      "x": 67.258065,
+      "y": 54.42861
+    },
+    {
+      "x": 69.806452,
+      "y": 53.577835
+    },
+    {
+      "x": 72.354839,
+      "y": 52.062632
+    },
+    {
+      "x": 74.903226,
+      "y": 53.460544
+    },
+    {
+      "x": 77.451613,
+      "y": 53.797052
+    },
+    {
+      "x": 80,
+      "y": 54.24459
+    }
+  ],
+  "recommendedModels": [
+    "logarithmic",
+    "cubic-spline",
+    "power-law"
+  ],
+  "generation": {
+    "seed": 3307,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Inverse-distance level expressed logarithmically."
+  }
+}

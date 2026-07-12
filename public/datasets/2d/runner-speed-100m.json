@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "runner-speed-100m",
+  "title": "Runner speed during a 100 m race",
+  "shortDescription": "Acceleration, peak-speed phase, and mild late-race deceleration.",
+  "description": "Synthetic sprint measurements with rapid acceleration, a short near-maximum phase, and a small decline near the finish.",
+  "dimension": "2d",
+  "category": "sport",
+  "tags": [
+    "motion",
+    "speed",
+    "nonlinear"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Time",
+      "unit": "s"
+    },
+    "y": {
+      "key": "y",
+      "label": "Speed",
+      "unit": "m/s"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 0.019715648
+    },
+    {
+      "x": 0.3,
+      "y": 1.9457724
+    },
+    {
+      "x": 0.6,
+      "y": 3.6562066
+    },
+    {
+      "x": 0.9,
+      "y": 5.110104
+    },
+    {
+      "x": 1.2,
+      "y": 6.319344
+    },
+    {
+      "x": 1.5,
+      "y": 7.1618498
+    },
+    {
+      "x": 1.8,
+      "y": 7.9182772
+    },
+    {
+      "x": 2.1,
+      "y": 8.6149515
+    },
+    {
+      "x": 2.4,
+      "y": 9.202127
+    },
+    {
+      "x": 2.7,
+      "y": 9.4859626
+    },
+    {
+      "x": 3,
+      "y": 9.9984847
+    },
+    {
+      "x": 3.3,
+      "y": 10.236307
+    },
+    {
+      "x": 3.6,
+      "y": 10.572257
+    },
+    {
+      "x": 3.9,
+      "y": 10.782304
+    },
+    {
+      "x": 4.2,
+      "y": 10.954092
+    },
+    {
+      "x": 4.5,
+      "y": 11.10368
+    },
+    {
+      "x": 4.8,
+      "y": 11.089597
+    },
+    {
+      "x": 5.1,
+      "y": 11.318773
+    },
+    {
+      "x": 5.4,
+      "y": 11.326101
+    },
+    {
+      "x": 5.7,
+      "y": 11.321315
+    },
+    {
+      "x": 6,
+      "y": 11.320703
+    },
+    {
+      "x": 6.3,
+      "y": 11.484265
+    },
+    {
+      "x": 6.6,
+      "y": 11.422632
+    },
+    {
+      "x": 6.9,
+      "y": 11.28726
+    },
+    {
+      "x": 7.2,
+      "y": 11.191473
+    },
+    {
+      "x": 7.5,
+      "y": 11.32522
+    },
+    {
+      "x": 7.8,
+      "y": 11.201667
+    },
+    {
+      "x": 8.1,
+      "y": 11.198633
+    },
+    {
+      "x": 8.4,
+      "y": 11.104075
+    },
+    {
+      "x": 8.7,
+      "y": 11.136081
+    },
+    {
+      "x": 9,
+      "y": 11.06062
+    },
+    {
+      "x": 9.3,
+      "y": 11.178502
+    },
+    {
+      "x": 9.6,
+      "y": 10.882117
+    },
+    {
+      "x": 9.9,
+      "y": 10.912342
+    },
+    {
+      "x": 10.2,
+      "y": 11.036828
+    }
+  ],
+  "recommendedModels": [
+    "cubic-spline",
+    "logistic",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 1207,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Saturating acceleration followed by mild linear fatigue."
+  }
+}

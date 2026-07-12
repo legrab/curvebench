@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "id": "human-height-growth",
+  "title": "Human height from infancy to adulthood",
+  "shortDescription": "Fast early growth, childhood growth, adolescent spurt, and plateau.",
+  "description": "A synthetic educational growth record combining early growth and a smaller adolescent growth spurt.",
+  "dimension": "2d",
+  "category": "biology",
+  "tags": [
+    "growth",
+    "sigmoid",
+    "human"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Age",
+      "unit": "years"
+    },
+    "y": {
+      "key": "y",
+      "label": "Height",
+      "unit": "cm"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 48.243659
+    },
+    {
+      "x": 0.5,
+      "y": 60.297248
+    },
+    {
+      "x": 1,
+      "y": 72.273323
+    },
+    {
+      "x": 1.5,
+      "y": 79.856464
+    },
+    {
+      "x": 2,
+      "y": 88.646613
+    },
+    {
+      "x": 2.5,
+      "y": 94.173557
+    },
+    {
+      "x": 3,
+      "y": 98.760101
+    },
+    {
+      "x": 3.5,
+      "y": 103.82448
+    },
+    {
+      "x": 4,
+      "y": 108.68284
+    },
+    {
+      "x": 4.5,
+      "y": 110.76011
+    },
+    {
+      "x": 5,
+      "y": 113.99655
+    },
+    {
+      "x": 5.5,
+      "y": 116.49206
+    },
+    {
+      "x": 6,
+      "y": 117.63501
+    },
+    {
+      "x": 6.5,
+      "y": 120.02131
+    },
+    {
+      "x": 7,
+      "y": 121.09359
+    },
+    {
+      "x": 7.5,
+      "y": 122.44736
+    },
+    {
+      "x": 8,
+      "y": 123.31506
+    },
+    {
+      "x": 8.5,
+      "y": 124.67175
+    },
+    {
+      "x": 9,
+      "y": 124.67363
+    },
+    {
+      "x": 9.5,
+      "y": 126.59794
+    },
+    {
+      "x": 10,
+      "y": 128.33019
+    },
+    {
+      "x": 10.5,
+      "y": 129.92368
+    },
+    {
+      "x": 11,
+      "y": 132.86151
+    },
+    {
+      "x": 11.5,
+      "y": 137.01927
+    },
+    {
+      "x": 12,
+      "y": 142.19163
+    },
+    {
+      "x": 12.5,
+      "y": 148.58015
+    },
+    {
+      "x": 13,
+      "y": 155.62672
+    },
+    {
+      "x": 13.5,
+      "y": 160.78454
+    },
+    {
+      "x": 14,
+      "y": 166.77482
+    },
+    {
+      "x": 14.5,
+      "y": 170.93103
+    },
+    {
+      "x": 15,
+      "y": 172.29027
+    },
+    {
+      "x": 15.5,
+      "y": 174.50279
+    },
+    {
+      "x": 16,
+      "y": 174.98248
+    },
+    {
+      "x": 16.5,
+      "y": 175.37492
+    },
+    {
+      "x": 17,
+      "y": 176.46
+    },
+    {
+      "x": 17.5,
+      "y": 175.99445
+    },
+    {
+      "x": 18,
+      "y": 176.83689
+    },
+    {
+      "x": 18.5,
+      "y": 177.35559
+    },
+    {
+      "x": 19,
+      "y": 176.76063
+    },
+    {
+      "x": 19.5,
+      "y": 177.01081
+    },
+    {
+      "x": 20,
+      "y": 177.21919
+    }
+  ],
+  "recommendedModels": [
+    "cubic-spline",
+    "logistic",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 1311,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Two-stage saturating growth model."
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "projectTitle": "Decay example workspace",
+  "applicationVersion": "0.1.0",
+  "createdAt": "2026-07-12T00:00:00.000Z",
+  "exportedAt": "2026-07-12T00:00:00.000Z",
+  "workspace": {
+    "schemaVersion": 1,
+    "dataset": {
+      "schemaVersion": 1,
+      "id": "radioactive-decay",
+      "title": "Normalized radioactive decay",
+      "shortDescription": "A simple half-life example with counting noise.",
+      "description": "Synthetic normalized count-rate measurements for a material with a four-hour half-life. This is not radiation-safety reference data.",
+      "dimension": "2d",
+      "category": "physics",
+      "tags": ["decay", "half-life", "exponential"],
+      "synthetic": true,
+      "sourceNote": "Generated for Curvebench. Not reference data.",
+      "axes": {
+        "x": {
+          "key": "x",
+          "label": "Time",
+          "unit": "h"
+        },
+        "y": {
+          "key": "y",
+          "label": "Normalized count rate",
+          "unit": "relative"
+        }
+      },
+      "points": [
+        {
+          "x": 0,
+          "y": 1.0025629
+        },
+        {
+          "x": 0.66666667,
+          "y": 0.88947603
+        },
+        {
+          "x": 1.3333333,
+          "y": 0.81182576
+        },
+        {
+          "x": 2,
+          "y": 0.70044147
+        },
+        {
+          "x": 2.6666667,
+          "y": 0.64748966
+        },
+        {
+          "x": 3.3333333,
+          "y": 0.58169686
+        },
+        {
+          "x": 4,
+          "y": 0.51568728
+        },
+        {
+          "x": 4.6666667,
+          "y": 0.47016832
+        },
+        {
+          "x": 5.3333333,
+          "y": 0.4253305
+        },
+        {
+          "x": 6,
+          "y": 0.38606766
+        },
+        {
+          "x": 6.6666667,
+          "y": 0.31780635
+        },
+        {
+          "x": 7.3333333,
+          "y": 0.3046284
+        },
+        {
+          "x": 8,
+          "y": 0.28328603
+        },
+        {
+          "x": 8.6666667,
+          "y": 0.25385199
+        },
+        {
+          "x": 9.3333333,
+          "y": 0.22698487
+        },
+        {
+          "x": 10,
+          "y": 0.21196963
+        },
+        {
+          "x": 10.666667,
+          "y": 0.18589143
+        },
+        {
+          "x": 11.333333,
+          "y": 0.15858094
+        },
+        {
+          "x": 12,
+          "y": 0.14466122
+        },
+        {
+          "x": 12.666667,
+          "y": 0.11048123
+        },
+        {
+          "x": 13.333333,
+          "y": 0.12307176
+        },
+        {
+          "x": 14,
+          "y": 0.12824623
+        },
+        {
+          "x": 14.666667,
+          "y": 0.10196793
+        },
+        {
+          "x": 15.333333,
+          "y": 0.077626967
+        },
+        {
+          "x": 16,
+          "y": 0.092310632
+        },
+        {
+          "x": 16.666667,
+          "y": 0.082231003
+        },
+        {
+          "x": 17.333333,
+          "y": 0.092867612
+        },
+        {
+          "x": 18,
+          "y": 0.080146853
+        },
+        {
+          "x": 18.666667,
+          "y": 0.075378503
+        },
+        {
+          "x": 19.333333,
+          "y": 0.024778779
+        },
+        {
+          "x": 20,
+          "y": 0.04555276
+        }
+      ],
+      "recommendedModels": ["exponential", "cubic-spline", "linear"],
+      "generation": {
+        "seed": 1707,
+        "noiseDescription": "Mild deterministic measurement noise.",
+        "formulaNote": "Exponential decay with a small background."
+      }
+    },
+    "datasetSource": {
+      "kind": "bundled",
+      "id": "radioactive-decay"
+    },
+    "models": [],
+    "selectedModelId": null,
+    "leftCollapsed": false,
+    "rightCollapsed": false,
+    "residualsOpen": false,
+    "tableOpen": false,
+    "tutorialOpen": true,
+    "showSurface": false
+  }
+}

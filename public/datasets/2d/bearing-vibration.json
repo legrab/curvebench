@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "id": "bearing-vibration",
+  "title": "Bearing vibration over operating time",
+  "shortDescription": "Stable baseline followed by accelerating wear.",
+  "description": "Synthetic vibration measurements for a machine bearing moving from a stable period into accelerating wear.",
+  "dimension": "2d",
+  "category": "engineering",
+  "tags": [
+    "wear",
+    "maintenance",
+    "exponential"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Operating time",
+      "unit": "h"
+    },
+    "y": {
+      "key": "y",
+      "label": "Vibration RMS",
+      "unit": "mm/s"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 0.46527017
+    },
+    {
+      "x": 50,
+      "y": 0.52649004
+    },
+    {
+      "x": 100,
+      "y": 0.46143989
+    },
+    {
+      "x": 150,
+      "y": 0.52001173
+    },
+    {
+      "x": 200,
+      "y": 0.46785119
+    },
+    {
+      "x": 250,
+      "y": 0.56753444
+    },
+    {
+      "x": 300,
+      "y": 0.50476292
+    },
+    {
+      "x": 350,
+      "y": 0.50188557
+    },
+    {
+      "x": 400,
+      "y": 0.51159072
+    },
+    {
+      "x": 450,
+      "y": 0.532564
+    },
+    {
+      "x": 500,
+      "y": 0.44887506
+    },
+    {
+      "x": 550,
+      "y": 0.52209418
+    },
+    {
+      "x": 600,
+      "y": 0.57700837
+    },
+    {
+      "x": 650,
+      "y": 0.5438785
+    },
+    {
+      "x": 700,
+      "y": 0.60292407
+    },
+    {
+      "x": 750,
+      "y": 0.52336698
+    },
+    {
+      "x": 800,
+      "y": 0.4991378
+    },
+    {
+      "x": 850,
+      "y": 0.5154377
+    },
+    {
+      "x": 900,
+      "y": 0.54067783
+    },
+    {
+      "x": 950,
+      "y": 0.54151101
+    },
+    {
+      "x": 1000,
+      "y": 0.58006639
+    },
+    {
+      "x": 1050,
+      "y": 0.5684812
+    },
+    {
+      "x": 1100,
+      "y": 0.54470833
+    },
+    {
+      "x": 1150,
+      "y": 0.55945588
+    },
+    {
+      "x": 1200,
+      "y": 0.56145043
+    },
+    {
+      "x": 1250,
+      "y": 0.57262769
+    },
+    {
+      "x": 1300,
+      "y": 0.48999266
+    },
+    {
+      "x": 1350,
+      "y": 0.52819839
+    },
+    {
+      "x": 1400,
+      "y": 0.56692959
+    },
+    {
+      "x": 1450,
+      "y": 0.59632426
+    },
+    {
+      "x": 1500,
+      "y": 0.56141694
+    },
+    {
+      "x": 1550,
+      "y": 0.53509756
+    },
+    {
+      "x": 1600,
+      "y": 0.62687202
+    },
+    {
+      "x": 1650,
+      "y": 0.56760764
+    },
+    {
+      "x": 1700,
+      "y": 0.59123581
+    },
+    {
+      "x": 1750,
+      "y": 0.6639848
+    },
+    {
+      "x": 1800,
+      "y": 0.67611279
+    },
+    {
+      "x": 1850,
+      "y": 0.67232296
+    },
+    {
+      "x": 1900,
+      "y": 0.75166585
+    },
+    {
+      "x": 1950,
+      "y": 0.8066612
+    },
+    {
+      "x": 2000,
+      "y": 0.83285425
+    },
+    {
+      "x": 2050,
+      "y": 0.89702904
+    },
+    {
+      "x": 2100,
+      "y": 0.88822042
+    },
+    {
+      "x": 2150,
+      "y": 1.0584216
+    },
+    {
+      "x": 2200,
+      "y": 1.1085926
+    },
+    {
+      "x": 2250,
+      "y": 1.2168742
+    },
+    {
+      "x": 2300,
+      "y": 1.2798672
+    },
+    {
+      "x": 2350,
+      "y": 1.4041572
+    },
+    {
+      "x": 2400,
+      "y": 1.5902639
+    }
+  ],
+  "recommendedModels": [
+    "cubic-spline",
+    "exponential",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 3204,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Baseline trend plus late exponential growth."
+  }
+}

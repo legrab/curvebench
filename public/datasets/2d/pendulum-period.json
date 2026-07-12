@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "pendulum-period",
+  "title": "Pendulum period versus length",
+  "shortDescription": "A square-root relationship with measurement noise.",
+  "description": "Synthetic period measurements for simple pendulums of different lengths.",
+  "dimension": "2d",
+  "category": "physics",
+  "tags": [
+    "square-root",
+    "oscillation",
+    "school"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Length",
+      "unit": "m"
+    },
+    "y": {
+      "key": "y",
+      "label": "Period",
+      "unit": "s"
+    }
+  },
+  "points": [
+    {
+      "x": 0.08,
+      "y": 0.56563464
+    },
+    {
+      "x": 0.1608,
+      "y": 0.7982645
+    },
+    {
+      "x": 0.2416,
+      "y": 0.96974778
+    },
+    {
+      "x": 0.3224,
+      "y": 1.1136706
+    },
+    {
+      "x": 0.4032,
+      "y": 1.2471976
+    },
+    {
+      "x": 0.484,
+      "y": 1.3779057
+    },
+    {
+      "x": 0.5648,
+      "y": 1.4942616
+    },
+    {
+      "x": 0.6456,
+      "y": 1.61251
+    },
+    {
+      "x": 0.7264,
+      "y": 1.7272434
+    },
+    {
+      "x": 0.8072,
+      "y": 1.8077586
+    },
+    {
+      "x": 0.888,
+      "y": 1.8907386
+    },
+    {
+      "x": 0.9688,
+      "y": 1.9990493
+    },
+    {
+      "x": 1.0496,
+      "y": 2.0006135
+    },
+    {
+      "x": 1.1304,
+      "y": 2.1276143
+    },
+    {
+      "x": 1.2112,
+      "y": 2.1905196
+    },
+    {
+      "x": 1.292,
+      "y": 2.2807447
+    },
+    {
+      "x": 1.3728,
+      "y": 2.3335509
+    },
+    {
+      "x": 1.4536,
+      "y": 2.4226048
+    },
+    {
+      "x": 1.5344,
+      "y": 2.4558698
+    },
+    {
+      "x": 1.6152,
+      "y": 2.5314049
+    },
+    {
+      "x": 1.696,
+      "y": 2.5966473
+    },
+    {
+      "x": 1.7768,
+      "y": 2.6824376
+    },
+    {
+      "x": 1.8576,
+      "y": 2.7201145
+    },
+    {
+      "x": 1.9384,
+      "y": 2.7929903
+    },
+    {
+      "x": 2.0192,
+      "y": 2.840395
+    },
+    {
+      "x": 2.1,
+      "y": 2.9114215
+    }
+  ],
+  "recommendedModels": [
+    "power-law",
+    "cubic-spline",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 2309,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Small-angle simple-pendulum relation."
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "traffic-flow-density",
+  "title": "Traffic flow versus vehicle density",
+  "shortDescription": "Flow rises, peaks, then falls under congestion.",
+  "description": "Synthetic traffic observations illustrating a fundamental-diagram-like shape.",
+  "dimension": "2d",
+  "category": "transport",
+  "tags": [
+    "traffic",
+    "quadratic",
+    "congestion"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Vehicle density",
+      "unit": "veh/km"
+    },
+    "y": {
+      "key": "y",
+      "label": "Traffic flow",
+      "unit": "veh/h"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 14.609494
+    },
+    {
+      "x": 4,
+      "y": 214.10189
+    },
+    {
+      "x": 8,
+      "y": 418.96912
+    },
+    {
+      "x": 12,
+      "y": 623.60979
+    },
+    {
+      "x": 16,
+      "y": 834.43318
+    },
+    {
+      "x": 20,
+      "y": 1065.121
+    },
+    {
+      "x": 24,
+      "y": 1175.2798
+    },
+    {
+      "x": 28,
+      "y": 1385.663
+    },
+    {
+      "x": 32,
+      "y": 1422.1853
+    },
+    {
+      "x": 36,
+      "y": 1671.829
+    },
+    {
+      "x": 40,
+      "y": 1684.821
+    },
+    {
+      "x": 44,
+      "y": 1865.4989
+    },
+    {
+      "x": 48,
+      "y": 1852.3096
+    },
+    {
+      "x": 52,
+      "y": 2022.1652
+    },
+    {
+      "x": 56,
+      "y": 2089.9878
+    },
+    {
+      "x": 60,
+      "y": 2127.8354
+    },
+    {
+      "x": 64,
+      "y": 2054.4054
+    },
+    {
+      "x": 68,
+      "y": 2143.7222
+    },
+    {
+      "x": 72,
+      "y": 2176.5981
+    },
+    {
+      "x": 76,
+      "y": 2083.574
+    },
+    {
+      "x": 80,
+      "y": 2126.8795
+    },
+    {
+      "x": 84,
+      "y": 2109.0846
+    },
+    {
+      "x": 88,
+      "y": 2025.8743
+    },
+    {
+      "x": 92,
+      "y": 1991.5955
+    },
+    {
+      "x": 96,
+      "y": 1905.1492
+    },
+    {
+      "x": 100,
+      "y": 1871.4477
+    },
+    {
+      "x": 104,
+      "y": 1738.9894
+    },
+    {
+      "x": 108,
+      "y": 1669.1317
+    },
+    {
+      "x": 112,
+      "y": 1600.9749
+    },
+    {
+      "x": 116,
+      "y": 1321.7311
+    },
+    {
+      "x": 120,
+      "y": 1253.0065
+    },
+    {
+      "x": 124,
+      "y": 1044.7838
+    },
+    {
+      "x": 128,
+      "y": 841.81579
+    },
+    {
+      "x": 132,
+      "y": 692.82858
+    },
+    {
+      "x": 136,
+      "y": 525.84429
+    },
+    {
+      "x": 140,
+      "y": 271.47993
+    }
+  ],
+  "recommendedModels": [
+    "polynomial",
+    "cubic-spline",
+    "gaussian"
+  ],
+  "generation": {
+    "seed": 3102,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Concave flow-density relation."
+  }
+}

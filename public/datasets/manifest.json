@@ -1,0 +1,576 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-12T00:00:00.000Z",
+  "datasets": [
+    {
+      "id": "runner-speed-100m",
+      "title": "Runner speed during a 100 m race",
+      "shortDescription": "Acceleration, peak-speed phase, and mild late-race deceleration.",
+      "dimension": "2d",
+      "category": "sport",
+      "tags": [
+        "motion",
+        "speed",
+        "nonlinear"
+      ],
+      "pointCount": 35,
+      "recommendedModels": [
+        "cubic-spline",
+        "logistic",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/runner-speed-100m.json"
+    },
+    {
+      "id": "human-height-growth",
+      "title": "Human height from infancy to adulthood",
+      "shortDescription": "Fast early growth, childhood growth, adolescent spurt, and plateau.",
+      "dimension": "2d",
+      "category": "biology",
+      "tags": [
+        "growth",
+        "sigmoid",
+        "human"
+      ],
+      "pointCount": 41,
+      "recommendedModels": [
+        "cubic-spline",
+        "logistic",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/human-height-growth.json"
+    },
+    {
+      "id": "infant-weight-first-year",
+      "title": "Infant weight during the first year",
+      "shortDescription": "A synthetic early weight trajectory with slowing growth.",
+      "dimension": "2d",
+      "category": "biology",
+      "tags": [
+        "growth",
+        "infancy",
+        "saturation"
+      ],
+      "pointCount": 25,
+      "recommendedModels": [
+        "cubic-spline",
+        "logistic",
+        "exponential"
+      ],
+      "path": "/datasets/2d/infant-weight-first-year.json"
+    },
+    {
+      "id": "sunflower-growth",
+      "title": "Sunflower height over a growing season",
+      "shortDescription": "Logistic-like growth with mild measurement variation.",
+      "dimension": "2d",
+      "category": "biology",
+      "tags": [
+        "plant",
+        "logistic",
+        "growth"
+      ],
+      "pointCount": 31,
+      "recommendedModels": [
+        "logistic",
+        "cubic-spline",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/sunflower-growth.json"
+    },
+    {
+      "id": "bacterial-culture-growth",
+      "title": "Bacterial culture growth",
+      "shortDescription": "Lag, rapid growth, and carrying-capacity plateau.",
+      "dimension": "2d",
+      "category": "biology",
+      "tags": [
+        "population",
+        "logistic",
+        "laboratory"
+      ],
+      "pointCount": 37,
+      "recommendedModels": [
+        "logistic",
+        "cubic-spline",
+        "exponential"
+      ],
+      "path": "/datasets/2d/bacterial-culture-growth.json"
+    },
+    {
+      "id": "radioactive-decay",
+      "title": "Normalized radioactive decay",
+      "shortDescription": "A simple half-life example with counting noise.",
+      "dimension": "2d",
+      "category": "physics",
+      "tags": [
+        "decay",
+        "half-life",
+        "exponential"
+      ],
+      "pointCount": 31,
+      "recommendedModels": [
+        "exponential",
+        "cubic-spline",
+        "linear"
+      ],
+      "path": "/datasets/2d/radioactive-decay.json"
+    },
+    {
+      "id": "cooling-drink",
+      "title": "Cooling drink temperature",
+      "shortDescription": "Exponential cooling toward room temperature.",
+      "dimension": "2d",
+      "category": "physics",
+      "tags": [
+        "temperature",
+        "cooling",
+        "exponential"
+      ],
+      "pointCount": 31,
+      "recommendedModels": [
+        "exponential",
+        "cubic-spline",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/cooling-drink.json"
+    },
+    {
+      "id": "capacitor-charging",
+      "title": "Capacitor charging",
+      "shortDescription": "Exponential approach to a supply voltage.",
+      "dimension": "2d",
+      "category": "electronics",
+      "tags": [
+        "circuit",
+        "charging",
+        "exponential"
+      ],
+      "pointCount": 31,
+      "recommendedModels": [
+        "exponential",
+        "cubic-spline",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/capacitor-charging.json"
+    },
+    {
+      "id": "spring-extension",
+      "title": "Spring extension under load",
+      "shortDescription": "A mostly linear elastic region with high-load deviation.",
+      "dimension": "2d",
+      "category": "physics",
+      "tags": [
+        "hooke",
+        "linear",
+        "elasticity"
+      ],
+      "pointCount": 25,
+      "recommendedModels": [
+        "linear",
+        "polynomial",
+        "cubic-spline"
+      ],
+      "path": "/datasets/2d/spring-extension.json"
+    },
+    {
+      "id": "projectile-height",
+      "title": "Projectile height over time",
+      "shortDescription": "A noisy parabolic flight arc.",
+      "dimension": "2d",
+      "category": "physics",
+      "tags": [
+        "motion",
+        "quadratic",
+        "projectile"
+      ],
+      "pointCount": 27,
+      "recommendedModels": [
+        "polynomial",
+        "lagrange",
+        "cubic-spline"
+      ],
+      "path": "/datasets/2d/projectile-height.json"
+    },
+    {
+      "id": "braking-distance",
+      "title": "Vehicle braking distance versus speed",
+      "shortDescription": "A strongly nonlinear speed-distance relation.",
+      "dimension": "2d",
+      "category": "engineering",
+      "tags": [
+        "quadratic",
+        "vehicle",
+        "safety"
+      ],
+      "pointCount": 23,
+      "recommendedModels": [
+        "polynomial",
+        "power-law",
+        "cubic-spline"
+      ],
+      "path": "/datasets/2d/braking-distance.json"
+    },
+    {
+      "id": "pendulum-period",
+      "title": "Pendulum period versus length",
+      "shortDescription": "A square-root relationship with measurement noise.",
+      "dimension": "2d",
+      "category": "physics",
+      "tags": [
+        "square-root",
+        "oscillation",
+        "school"
+      ],
+      "pointCount": 26,
+      "recommendedModels": [
+        "power-law",
+        "cubic-spline",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/pendulum-period.json"
+    },
+    {
+      "id": "enzyme-rate",
+      "title": "Enzyme reaction rate",
+      "shortDescription": "A saturating response to substrate concentration.",
+      "dimension": "2d",
+      "category": "chemistry",
+      "tags": [
+        "saturation",
+        "enzyme",
+        "laboratory"
+      ],
+      "pointCount": 32,
+      "recommendedModels": [
+        "logistic",
+        "cubic-spline",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/enzyme-rate.json"
+    },
+    {
+      "id": "photosynthesis-light",
+      "title": "Photosynthesis response to light",
+      "shortDescription": "Initial increase, saturation, and slight high-light inhibition.",
+      "dimension": "2d",
+      "category": "biology",
+      "tags": [
+        "plant",
+        "saturation",
+        "inhibition"
+      ],
+      "pointCount": 33,
+      "recommendedModels": [
+        "cubic-spline",
+        "polynomial",
+        "logistic"
+      ],
+      "path": "/datasets/2d/photosynthesis-light.json"
+    },
+    {
+      "id": "dose-response",
+      "title": "Abstract dose-response curve",
+      "shortDescription": "A sigmoidal laboratory response.",
+      "dimension": "2d",
+      "category": "laboratory",
+      "tags": [
+        "sigmoid",
+        "hill",
+        "response"
+      ],
+      "pointCount": 31,
+      "recommendedModels": [
+        "logistic",
+        "cubic-spline",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/dose-response.json"
+    },
+    {
+      "id": "titration-response",
+      "title": "Acid-base titration-style response",
+      "shortDescription": "A steep transition region between two plateaus.",
+      "dimension": "2d",
+      "category": "chemistry",
+      "tags": [
+        "titration",
+        "sigmoid",
+        "transition"
+      ],
+      "pointCount": 41,
+      "recommendedModels": [
+        "cubic-spline",
+        "logistic",
+        "lagrange"
+      ],
+      "path": "/datasets/2d/titration-response.json"
+    },
+    {
+      "id": "solubility-temperature",
+      "title": "Solubility versus temperature",
+      "shortDescription": "A nonlinear increase with temperature.",
+      "dimension": "2d",
+      "category": "chemistry",
+      "tags": [
+        "temperature",
+        "solubility",
+        "nonlinear"
+      ],
+      "pointCount": 30,
+      "recommendedModels": [
+        "polynomial",
+        "cubic-spline",
+        "exponential"
+      ],
+      "path": "/datasets/2d/solubility-temperature.json"
+    },
+    {
+      "id": "solar-panel-day",
+      "title": "Solar panel output during a clear day",
+      "shortDescription": "An asymmetric daytime peak with minor atmospheric variation.",
+      "dimension": "2d",
+      "category": "energy",
+      "tags": [
+        "solar",
+        "daily",
+        "asymmetric"
+      ],
+      "pointCount": 46,
+      "recommendedModels": [
+        "cubic-spline",
+        "polynomial",
+        "gaussian"
+      ],
+      "path": "/datasets/2d/solar-panel-day.json"
+    },
+    {
+      "id": "daylight-duration",
+      "title": "Daylight duration through a year",
+      "shortDescription": "Smooth seasonal periodic behavior.",
+      "dimension": "2d",
+      "category": "environment",
+      "tags": [
+        "seasonal",
+        "periodic",
+        "sinusoid"
+      ],
+      "pointCount": 53,
+      "recommendedModels": [
+        "sinusoid",
+        "cubic-spline",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/daylight-duration.json"
+    },
+    {
+      "id": "traffic-flow-density",
+      "title": "Traffic flow versus vehicle density",
+      "shortDescription": "Flow rises, peaks, then falls under congestion.",
+      "dimension": "2d",
+      "category": "transport",
+      "tags": [
+        "traffic",
+        "quadratic",
+        "congestion"
+      ],
+      "pointCount": 36,
+      "recommendedModels": [
+        "polynomial",
+        "cubic-spline",
+        "gaussian"
+      ],
+      "path": "/datasets/2d/traffic-flow-density.json"
+    },
+    {
+      "id": "bearing-vibration",
+      "title": "Bearing vibration over operating time",
+      "shortDescription": "Stable baseline followed by accelerating wear.",
+      "dimension": "2d",
+      "category": "engineering",
+      "tags": [
+        "wear",
+        "maintenance",
+        "exponential"
+      ],
+      "pointCount": 49,
+      "recommendedModels": [
+        "cubic-spline",
+        "exponential",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/bearing-vibration.json"
+    },
+    {
+      "id": "sound-level-distance",
+      "title": "Sound level versus distance",
+      "shortDescription": "A logarithmic decline with distance.",
+      "dimension": "2d",
+      "category": "physics",
+      "tags": [
+        "sound",
+        "logarithmic",
+        "distance"
+      ],
+      "pointCount": 32,
+      "recommendedModels": [
+        "logarithmic",
+        "cubic-spline",
+        "power-law"
+      ],
+      "path": "/datasets/2d/sound-level-distance.json"
+    },
+    {
+      "id": "pressure-altitude",
+      "title": "Atmospheric pressure versus altitude",
+      "shortDescription": "An exponential-like decrease with altitude.",
+      "dimension": "2d",
+      "category": "environment",
+      "tags": [
+        "pressure",
+        "altitude",
+        "exponential"
+      ],
+      "pointCount": 36,
+      "recommendedModels": [
+        "exponential",
+        "cubic-spline",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/pressure-altitude.json"
+    },
+    {
+      "id": "bouncing-ball",
+      "title": "Bouncing ball peak height",
+      "shortDescription": "Geometric decay by bounce number.",
+      "dimension": "2d",
+      "category": "physics",
+      "tags": [
+        "decay",
+        "geometric",
+        "bounce"
+      ],
+      "pointCount": 16,
+      "recommendedModels": [
+        "exponential",
+        "cubic-spline",
+        "power-law"
+      ],
+      "path": "/datasets/2d/bouncing-ball.json"
+    },
+    {
+      "id": "heated-metal-plate",
+      "title": "Temperature across a heated metal plate",
+      "shortDescription": "A warm source with cooler edges and slight asymmetry.",
+      "dimension": "3d",
+      "category": "physics",
+      "tags": [
+        "surface",
+        "temperature",
+        "gaussian"
+      ],
+      "pointCount": 81,
+      "recommendedModels": [
+        "plane-3d",
+        "quadratic-surface",
+        "gaussian-surface"
+      ],
+      "path": "/datasets/3d/heated-metal-plate.json"
+    },
+    {
+      "id": "fictional-terrain",
+      "title": "Fictional terrain with hill and saddle",
+      "shortDescription": "A broad hill combined with a saddle-shaped landform.",
+      "dimension": "3d",
+      "category": "environment",
+      "tags": [
+        "terrain",
+        "saddle",
+        "surface"
+      ],
+      "pointCount": 81,
+      "recommendedModels": [
+        "quadratic-surface",
+        "gaussian-surface",
+        "plane-3d"
+      ],
+      "path": "/datasets/3d/fictional-terrain.json"
+    },
+    {
+      "id": "pollutant-plume",
+      "title": "Synthetic pollutant concentration downwind",
+      "shortDescription": "A plume-like concentration surface with downwind decay.",
+      "dimension": "3d",
+      "category": "environment",
+      "tags": [
+        "plume",
+        "concentration",
+        "surface"
+      ],
+      "pointCount": 90,
+      "recommendedModels": [
+        "gaussian-surface",
+        "quadratic-surface",
+        "plane-3d"
+      ],
+      "path": "/datasets/3d/pollutant-plume.json"
+    },
+    {
+      "id": "reaction-yield-surface",
+      "title": "Reaction yield by temperature and catalyst",
+      "shortDescription": "A curved response surface with an interior optimum.",
+      "dimension": "3d",
+      "category": "chemistry",
+      "tags": [
+        "yield",
+        "optimization",
+        "quadratic"
+      ],
+      "pointCount": 81,
+      "recommendedModels": [
+        "quadratic-surface",
+        "plane-3d",
+        "gaussian-surface"
+      ],
+      "path": "/datasets/3d/reaction-yield-surface.json"
+    },
+    {
+      "id": "wave-interference",
+      "title": "Wave interference intensity",
+      "shortDescription": "A damped two-source interference pattern.",
+      "dimension": "3d",
+      "category": "physics",
+      "tags": [
+        "wave",
+        "interference",
+        "oscillation"
+      ],
+      "pointCount": 100,
+      "recommendedModels": [
+        "quadratic-surface",
+        "gaussian-surface",
+        "plane-3d"
+      ],
+      "path": "/datasets/3d/wave-interference.json"
+    },
+    {
+      "id": "plant-light-water",
+      "title": "Plant growth response to light and water",
+      "shortDescription": "A broad optimum with poor growth at both low and excessive input.",
+      "dimension": "3d",
+      "category": "biology",
+      "tags": [
+        "plant",
+        "optimum",
+        "surface"
+      ],
+      "pointCount": 81,
+      "recommendedModels": [
+        "gaussian-surface",
+        "quadratic-surface",
+        "plane-3d"
+      ],
+      "path": "/datasets/3d/plant-light-water.json"
+    }
+  ]
+}

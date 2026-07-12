@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "cooling-drink",
+  "title": "Cooling drink temperature",
+  "shortDescription": "Exponential cooling toward room temperature.",
+  "description": "Synthetic temperature measurements for a hot drink cooling in a room.",
+  "dimension": "2d",
+  "category": "physics",
+  "tags": [
+    "temperature",
+    "cooling",
+    "exponential"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Time",
+      "unit": "min"
+    },
+    "y": {
+      "key": "y",
+      "label": "Temperature",
+      "unit": "°C"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 88.460581
+    },
+    {
+      "x": 2,
+      "y": 82.082838
+    },
+    {
+      "x": 4,
+      "y": 75.899468
+    },
+    {
+      "x": 6,
+      "y": 72.043119
+    },
+    {
+      "x": 8,
+      "y": 67.912721
+    },
+    {
+      "x": 10,
+      "y": 63.284416
+    },
+    {
+      "x": 12,
+      "y": 59.494307
+    },
+    {
+      "x": 14,
+      "y": 55.978897
+    },
+    {
+      "x": 16,
+      "y": 52.790745
+    },
+    {
+      "x": 18,
+      "y": 50.222531
+    },
+    {
+      "x": 20,
+      "y": 47.595452
+    },
+    {
+      "x": 22,
+      "y": 45.009202
+    },
+    {
+      "x": 24,
+      "y": 41.867598
+    },
+    {
+      "x": 26,
+      "y": 41.254027
+    },
+    {
+      "x": 28,
+      "y": 39.787603
+    },
+    {
+      "x": 30,
+      "y": 37.976133
+    },
+    {
+      "x": 32,
+      "y": 36.707001
+    },
+    {
+      "x": 34,
+      "y": 35.159316
+    },
+    {
+      "x": 36,
+      "y": 34.209883
+    },
+    {
+      "x": 38,
+      "y": 32.925538
+    },
+    {
+      "x": 40,
+      "y": 31.631472
+    },
+    {
+      "x": 42,
+      "y": 29.891181
+    },
+    {
+      "x": 44,
+      "y": 30.320338
+    },
+    {
+      "x": 46,
+      "y": 29.350807
+    },
+    {
+      "x": 48,
+      "y": 29.466781
+    },
+    {
+      "x": 50,
+      "y": 28.038605
+    },
+    {
+      "x": 52,
+      "y": 27.639927
+    },
+    {
+      "x": 54,
+      "y": 26.756641
+    },
+    {
+      "x": 56,
+      "y": 26.026285
+    },
+    {
+      "x": 58,
+      "y": 25.699716
+    },
+    {
+      "x": 60,
+      "y": 25.098132
+    }
+  ],
+  "recommendedModels": [
+    "exponential",
+    "cubic-spline",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 1808,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Newton-style cooling."
+  }
+}

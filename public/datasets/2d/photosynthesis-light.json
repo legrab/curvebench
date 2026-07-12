@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "photosynthesis-light",
+  "title": "Photosynthesis response to light",
+  "shortDescription": "Initial increase, saturation, and slight high-light inhibition.",
+  "description": "Synthetic response measurements across increasing light intensity.",
+  "dimension": "2d",
+  "category": "biology",
+  "tags": [
+    "plant",
+    "saturation",
+    "inhibition"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Light intensity",
+      "unit": "µmol/m²/s"
+    },
+    "y": {
+      "key": "y",
+      "label": "Response rate",
+      "unit": "relative"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 0.35781413
+    },
+    {
+      "x": 50,
+      "y": 5.1649073
+    },
+    {
+      "x": 100,
+      "y": 7.8230969
+    },
+    {
+      "x": 150,
+      "y": 9.7286511
+    },
+    {
+      "x": 200,
+      "y": 12.561061
+    },
+    {
+      "x": 250,
+      "y": 12.989478
+    },
+    {
+      "x": 300,
+      "y": 14.653259
+    },
+    {
+      "x": 350,
+      "y": 15.327869
+    },
+    {
+      "x": 400,
+      "y": 16.035582
+    },
+    {
+      "x": 450,
+      "y": 17.433377
+    },
+    {
+      "x": 500,
+      "y": 17.893067
+    },
+    {
+      "x": 550,
+      "y": 19.347083
+    },
+    {
+      "x": 600,
+      "y": 19.404357
+    },
+    {
+      "x": 650,
+      "y": 20.104306
+    },
+    {
+      "x": 700,
+      "y": 19.132388
+    },
+    {
+      "x": 750,
+      "y": 20.153525
+    },
+    {
+      "x": 800,
+      "y": 20.066953
+    },
+    {
+      "x": 850,
+      "y": 21.447153
+    },
+    {
+      "x": 900,
+      "y": 20.599487
+    },
+    {
+      "x": 950,
+      "y": 19.769968
+    },
+    {
+      "x": 1000,
+      "y": 19.518043
+    },
+    {
+      "x": 1050,
+      "y": 19.263317
+    },
+    {
+      "x": 1100,
+      "y": 20.484847
+    },
+    {
+      "x": 1150,
+      "y": 20.102439
+    },
+    {
+      "x": 1200,
+      "y": 18.362074
+    },
+    {
+      "x": 1250,
+      "y": 20.135491
+    },
+    {
+      "x": 1300,
+      "y": 20.34575
+    },
+    {
+      "x": 1350,
+      "y": 19.261946
+    },
+    {
+      "x": 1400,
+      "y": 17.690956
+    },
+    {
+      "x": 1450,
+      "y": 19.294794
+    },
+    {
+      "x": 1500,
+      "y": 18.468402
+    },
+    {
+      "x": 1550,
+      "y": 17.076231
+    },
+    {
+      "x": 1600,
+      "y": 15.897539
+    }
+  ],
+  "recommendedModels": [
+    "cubic-spline",
+    "polynomial",
+    "logistic"
+  ],
+  "generation": {
+    "seed": 2506,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Saturating response with mild high-input inhibition."
+  }
+}

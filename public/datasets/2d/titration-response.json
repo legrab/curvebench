@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "id": "titration-response",
+  "title": "Acid-base titration-style response",
+  "shortDescription": "A steep transition region between two plateaus.",
+  "description": "Synthetic schematic titration-style measurements intended for interpolation and sigmoid comparison.",
+  "dimension": "2d",
+  "category": "chemistry",
+  "tags": [
+    "titration",
+    "sigmoid",
+    "transition"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Added volume",
+      "unit": "mL"
+    },
+    "y": {
+      "key": "y",
+      "label": "Measured response",
+      "unit": "pH-like"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 2.2197108
+    },
+    {
+      "x": 1.25,
+      "y": 2.2656113
+    },
+    {
+      "x": 2.5,
+      "y": 2.3065981
+    },
+    {
+      "x": 3.75,
+      "y": 2.3143258
+    },
+    {
+      "x": 5,
+      "y": 2.2529416
+    },
+    {
+      "x": 6.25,
+      "y": 2.30056
+    },
+    {
+      "x": 7.5,
+      "y": 2.2514439
+    },
+    {
+      "x": 8.75,
+      "y": 2.2757646
+    },
+    {
+      "x": 10,
+      "y": 2.2620795
+    },
+    {
+      "x": 11.25,
+      "y": 2.2901507
+    },
+    {
+      "x": 12.5,
+      "y": 2.3286106
+    },
+    {
+      "x": 13.75,
+      "y": 2.3859684
+    },
+    {
+      "x": 15,
+      "y": 2.3055987
+    },
+    {
+      "x": 16.25,
+      "y": 2.3518088
+    },
+    {
+      "x": 17.5,
+      "y": 2.3462555
+    },
+    {
+      "x": 18.75,
+      "y": 2.5305705
+    },
+    {
+      "x": 20,
+      "y": 2.4800871
+    },
+    {
+      "x": 21.25,
+      "y": 2.604474
+    },
+    {
+      "x": 22.5,
+      "y": 3.016412
+    },
+    {
+      "x": 23.75,
+      "y": 4.052494
+    },
+    {
+      "x": 25,
+      "y": 6.191781
+    },
+    {
+      "x": 26.25,
+      "y": 8.8130374
+    },
+    {
+      "x": 27.5,
+      "y": 10.425308
+    },
+    {
+      "x": 28.75,
+      "y": 11.24322
+    },
+    {
+      "x": 30,
+      "y": 11.48246
+    },
+    {
+      "x": 31.25,
+      "y": 11.58546
+    },
+    {
+      "x": 32.5,
+      "y": 11.688443
+    },
+    {
+      "x": 33.75,
+      "y": 11.627495
+    },
+    {
+      "x": 35,
+      "y": 11.61205
+    },
+    {
+      "x": 36.25,
+      "y": 11.655517
+    },
+    {
+      "x": 37.5,
+      "y": 11.735951
+    },
+    {
+      "x": 38.75,
+      "y": 11.712408
+    },
+    {
+      "x": 40,
+      "y": 11.704372
+    },
+    {
+      "x": 41.25,
+      "y": 11.609518
+    },
+    {
+      "x": 42.5,
+      "y": 11.640363
+    },
+    {
+      "x": 43.75,
+      "y": 11.658329
+    },
+    {
+      "x": 45,
+      "y": 11.722229
+    },
+    {
+      "x": 46.25,
+      "y": 11.738404
+    },
+    {
+      "x": 47.5,
+      "y": 11.778437
+    },
+    {
+      "x": 48.75,
+      "y": 11.752817
+    },
+    {
+      "x": 50,
+      "y": 11.793776
+    }
+  ],
+  "recommendedModels": [
+    "cubic-spline",
+    "logistic",
+    "lagrange"
+  ],
+  "generation": {
+    "seed": 2703,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Steep logistic transition with a weak trend."
+  }
+}

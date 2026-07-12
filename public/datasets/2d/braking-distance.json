@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "braking-distance",
+  "title": "Vehicle braking distance versus speed",
+  "shortDescription": "A strongly nonlinear speed-distance relation.",
+  "description": "Synthetic dry-road braking-distance observations. This is not engineering or road-safety reference data.",
+  "dimension": "2d",
+  "category": "engineering",
+  "tags": [
+    "quadratic",
+    "vehicle",
+    "safety"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Speed",
+      "unit": "km/h"
+    },
+    "y": {
+      "key": "y",
+      "label": "Braking distance",
+      "unit": "m"
+    }
+  },
+  "points": [
+    {
+      "x": 20,
+      "y": 5.8154121
+    },
+    {
+      "x": 25,
+      "y": 4.5734842
+    },
+    {
+      "x": 30,
+      "y": 6.8826048
+    },
+    {
+      "x": 35,
+      "y": 11.480367
+    },
+    {
+      "x": 40,
+      "y": 14.561588
+    },
+    {
+      "x": 45,
+      "y": 18.342969
+    },
+    {
+      "x": 50,
+      "y": 21.527638
+    },
+    {
+      "x": 55,
+      "y": 25.894385
+    },
+    {
+      "x": 60,
+      "y": 27.858658
+    },
+    {
+      "x": 65,
+      "y": 33.23385
+    },
+    {
+      "x": 70,
+      "y": 37.71114
+    },
+    {
+      "x": 75,
+      "y": 42.615536
+    },
+    {
+      "x": 80,
+      "y": 50.322037
+    },
+    {
+      "x": 85,
+      "y": 54.631802
+    },
+    {
+      "x": 90,
+      "y": 59.262199
+    },
+    {
+      "x": 95,
+      "y": 64.578686
+    },
+    {
+      "x": 100,
+      "y": 70.362835
+    },
+    {
+      "x": 105,
+      "y": 80.853781
+    },
+    {
+      "x": 110,
+      "y": 87.998363
+    },
+    {
+      "x": 115,
+      "y": 96.395796
+    },
+    {
+      "x": 120,
+      "y": 102.93453
+    },
+    {
+      "x": 125,
+      "y": 114.27457
+    },
+    {
+      "x": 130,
+      "y": 119.9103
+    }
+  ],
+  "recommendedModels": [
+    "polynomial",
+    "power-law",
+    "cubic-spline"
+  ],
+  "generation": {
+    "seed": 2206,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Dominantly quadratic braking-distance relationship."
+  }
+}
