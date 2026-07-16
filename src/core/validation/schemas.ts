@@ -70,7 +70,7 @@ export const manifestEntrySchema = z.object({
 export const datasetManifestSchema = z.object({
   schemaVersion: z.literal(1),
   generatedAt: z.string(),
-  datasets: z.array(manifestEntrySchema).length(30),
+  datasets: z.array(manifestEntrySchema).min(30),
 });
 
 export const activeModelSchema = z.object({

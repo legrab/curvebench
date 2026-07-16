@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "id": "ligand-binding-isotherm",
+  "title": "Molecular binding saturation",
+  "shortDescription": "Rapid initial binding that approaches a finite occupancy plateau.",
+  "description": "Synthetic equilibrium occupancy values for a simple one-site binding illustration. It does not describe a specific molecule.",
+  "dimension": "2d",
+  "category": "molecular",
+  "tags": [
+    "binding",
+    "saturation",
+    "isotherm"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Free ligand concentration",
+      "unit": "relative"
+    },
+    "y": {
+      "key": "y",
+      "label": "Bound fraction",
+      "unit": "fraction"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 0.037638945
+    },
+    {
+      "x": 0.33333333,
+      "y": 0.16685535
+    },
+    {
+      "x": 0.66666667,
+      "y": 0.24220747
+    },
+    {
+      "x": 1,
+      "y": 0.30481155
+    },
+    {
+      "x": 1.3333333,
+      "y": 0.38381135
+    },
+    {
+      "x": 1.6666667,
+      "y": 0.42298723
+    },
+    {
+      "x": 2,
+      "y": 0.45383063
+    },
+    {
+      "x": 2.3333333,
+      "y": 0.49779407
+    },
+    {
+      "x": 2.6666667,
+      "y": 0.52782645
+    },
+    {
+      "x": 3,
+      "y": 0.559313
+    },
+    {
+      "x": 3.3333333,
+      "y": 0.58630718
+    },
+    {
+      "x": 3.6666667,
+      "y": 0.59258666
+    },
+    {
+      "x": 4,
+      "y": 0.61883985
+    },
+    {
+      "x": 4.3333333,
+      "y": 0.61418373
+    },
+    {
+      "x": 4.6666667,
+      "y": 0.62916945
+    },
+    {
+      "x": 5,
+      "y": 0.65006846
+    },
+    {
+      "x": 5.3333333,
+      "y": 0.67227891
+    },
+    {
+      "x": 5.6666667,
+      "y": 0.68469066
+    },
+    {
+      "x": 6,
+      "y": 0.69731593
+    },
+    {
+      "x": 6.3333333,
+      "y": 0.71755272
+    },
+    {
+      "x": 6.6666667,
+      "y": 0.7276407
+    },
+    {
+      "x": 7,
+      "y": 0.71906005
+    },
+    {
+      "x": 7.3333333,
+      "y": 0.74117307
+    },
+    {
+      "x": 7.6666667,
+      "y": 0.7266044
+    },
+    {
+      "x": 8,
+      "y": 0.74859592
+    },
+    {
+      "x": 8.3333333,
+      "y": 0.74558396
+    },
+    {
+      "x": 8.6666667,
+      "y": 0.75909204
+    },
+    {
+      "x": 9,
+      "y": 0.73981363
+    },
+    {
+      "x": 9.3333333,
+      "y": 0.78359543
+    },
+    {
+      "x": 9.6666667,
+      "y": 0.77293042
+    },
+    {
+      "x": 10,
+      "y": 0.7755131
+    },
+    {
+      "x": 10.333333,
+      "y": 0.78589248
+    },
+    {
+      "x": 10.666667,
+      "y": 0.78454213
+    },
+    {
+      "x": 11,
+      "y": 0.79542527
+    },
+    {
+      "x": 11.333333,
+      "y": 0.8219438
+    },
+    {
+      "x": 11.666667,
+      "y": 0.81080054
+    },
+    {
+      "x": 12,
+      "y": 0.79914774
+    }
+  ],
+  "recommendedModels": [
+    "saturation",
+    "cubic-spline",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 3703,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Rectangular-hyperbola saturation with baseline."
+  }
+}

@@ -237,6 +237,14 @@ export function DatasetPanel(props: Props) {
         </div>
       </section>
 
+      <section className="panel-section repository-block" aria-labelledby="repository-heading">
+        <h2 id="repository-heading">Repository</h2>
+        <a href="https://github.com/legrab/curvebench" target="_blank" rel="noreferrer">
+          legrab/curvebench
+        </a>
+        <p>Source code, deployment setup, examples, and issue tracking.</p>
+      </section>
+
       <Modal
         title="CSV metadata"
         open={Boolean(csv)}

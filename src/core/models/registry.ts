@@ -360,6 +360,39 @@ const powerLaw: ModelDefinition = {
   formula: (p) => `y = ${fmt(p.a)}·x^${fmt(p.b)}`,
 };
 
+const saturationPredict = (x: number, p: ParameterValues) => p.b! + (p.V! * x) / (p.K! + x);
+const saturation: ModelDefinition = {
+  id: "saturation",
+  label: "Saturation fit",
+  category: "regression",
+  dimensions: ["2d"],
+  description: "Fits a baseline-shifted rectangular hyperbola, y = b + V·x/(K+x).",
+  limitation: "Automatic fitting requires x ≥ 0; K is constrained to remain positive.",
+  supportsAutomaticFit: true,
+  createInitialParams(dataset) {
+    const { x, y } = ranges2D(dataset);
+    return { b: y.min, V: y.span, K: Math.max(x.span / 3, 1e-6) };
+  },
+  getParameterSpecs(dataset, params) {
+    const { x, y } = ranges2D(dataset);
+    const minimumK = Math.max(x.span / 10000, 1e-9);
+    return [
+      spec("b", "Baseline b", params.b ?? y.min, y.min - y.span * 5, y.max + y.span * 5),
+      spec("V", "Plateau rise V", params.V ?? y.span, -y.span * 20, y.span * 20),
+      spec("K", "Half-saturation K", params.K ?? x.span / 3, minimumK, x.span * 20),
+    ];
+  },
+  fit(dataset, params, bounds) {
+    return nonlinearFit(require2D(dataset), params, bounds, saturationPredict);
+  },
+  predict2D: saturationPredict,
+  formula: (p) => `y = ${fmt(p.b)} + ${fmt(p.V)}·x/(${fmt(p.K)}+x)`,
+  validate: (dataset) =>
+    dataset.dimension === "2d" && dataset.points.some((point) => point.x < 0)
+      ? "Saturation fitting requires x ≥ 0."
+      : null,
+};
+
 function peakSpecs(dataset: Dataset, params: ParameterValues, widthKey: "sigma" | "gamma") {
   const { x, y } = ranges2D(dataset);
   return [
@@ -929,6 +962,7 @@ export const modelDefinitions: ModelDefinition[] = [
   exponential,
   logarithmic,
   powerLaw,
+  saturation,
   logistic,
   gaussian,
   lorentzian,

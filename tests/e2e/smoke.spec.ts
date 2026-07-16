@@ -53,10 +53,8 @@ test("renders a 3D surface and adds an automatic plane fit", async ({ page }) =>
   const pageErrors = capturePageErrors(page);
   await page.goto("/");
   await page.getByRole("combobox", { name: "Dimension" }).selectOption("3d");
-  await page.getByRole("button", { name: /Temperature across a heated metal plate/ }).click();
-  await expect(
-    page.getByText("Temperature across a heated metal plate", { exact: true }).first(),
-  ).toBeVisible();
+  await page.getByRole("button", { name: /Simple tilted tabletop/ }).click();
+  await expect(page.getByText("Simple tilted tabletop", { exact: true }).first()).toBeVisible();
   await expect(page.getByTestId("main-plot")).toBeVisible();
 
   await page.getByLabel("Connect regular-grid measurements").check();
@@ -85,5 +83,24 @@ test("imports canonical JSON and CSV examples through the interface", async ({ p
   await page.getByRole("button", { name: "Load dataset" }).click();
   await expect(page.getByText("surface-example", { exact: true }).first()).toBeVisible();
   await expect(page.getByTestId("main-plot")).toBeVisible();
+  await expect.poll(() => pageErrors.map((error) => error.message)).toEqual([]);
+});
+
+test("opens the manual, downloads a template, and exposes the repository", async ({ page }) => {
+  const pageErrors = capturePageErrors(page);
+  await page.goto("/");
+
+  await page.getByText("Help", { exact: true }).click();
+  await page.getByRole("button", { name: "User manual & import formats" }).click();
+  await expect(page).toHaveURL(/#manual$/);
+  await expect(page.getByRole("heading", { name: /From source data/ })).toBeVisible();
+
+  const templateDownload = page.waitForEvent("download");
+  await page.getByRole("link", { name: "Download 2-D JSON" }).click();
+  await expect((await templateDownload).suggestedFilename()).toBe("dataset-2d.json");
+
+  await page.getByRole("button", { name: "Back to workspace" }).click();
+  const repository = page.getByRole("link", { name: "legrab/curvebench" });
+  await expect(repository).toHaveAttribute("href", "https://github.com/legrab/curvebench");
   await expect.poll(() => pageErrors.map((error) => error.message)).toEqual([]);
 });

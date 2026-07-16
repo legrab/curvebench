@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "replace-with-dataset-id",
+  "title": "Replace with dataset title",
+  "shortDescription": "A short description shown in dataset lists.",
+  "description": "Describe what the points represent and any important limitations.",
+  "dimension": "2d",
+  "category": "custom",
+  "tags": ["example"],
+  "synthetic": false,
+  "sourceNote": "State where the values came from and how they may be used.",
+  "axes": {
+    "x": { "key": "x", "label": "Input", "unit": "" },
+    "y": { "key": "y", "label": "Output", "unit": "" }
+  },
+  "points": [
+    { "x": 0, "y": 1 },
+    { "x": 1, "y": 3 },
+    { "x": 2, "y": 5 }
+  ],
+  "recommendedModels": ["linear"]
+}

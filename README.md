@@ -2,7 +2,7 @@
 
 Curvebench is a static browser application for learning how interpolation, regression, parametric models, residuals, and limited 3D surface fitting behave on measured data.
 
-It contains 30 synthetic educational datasets, JSON and CSV import, formula-based dataset generation, editable points, multiple simultaneous model overlays, automatic fitting where supported, local project persistence, image export, and a print-ready report.
+It contains 43 synthetic educational datasets, JSON and CSV import, formula-based dataset generation, editable points, multiple simultaneous model overlays, automatic fitting where supported, local project persistence, image export, and a print-ready report.
 
 > All bundled data is synthetic and intended only for mathematical education. It is not medical, scientific, environmental, engineering, or safety reference data.
 
@@ -42,17 +42,18 @@ npm run test:e2e
 
 ## Main capabilities
 
-- 24 bundled 2D datasets and 6 bundled 3D surface datasets
+- 34 bundled 2D datasets and 9 bundled 3D surface datasets, including molecular, hobby, society, and beginner 3D examples
 - On-demand static JSON loading through a validated manifest
 - Canonical JSON import and simple `x,y` or `x,y,z` CSV import
 - Restricted formula generation for `y=f(x)` and `z=f(x,y)`
 - Browser-local custom dataset library and debounced workspace autosave
 - Piecewise linear, Lagrange, Newton, and natural cubic spline interpolation
-- Linear, polynomial, exponential, logarithmic, power-law, logistic, Gaussian, Lorentzian, and pseudo-Voigt fitting
+- Linear, polynomial, exponential, logarithmic, power-law, saturation, logistic, Gaussian, Lorentzian, and pseudo-Voigt fitting
 - Manual sinusoid, damped sinusoid, circle, ellipse, Gaussian surface, sphere, ellipsoid, and custom formula overlays
 - Automatic plane and quadratic-surface fitting in 3D
 - RMSE, MAE, R², maximum absolute error, and residual display where meaningful
 - PNG, SVG, dataset JSON, project JSON, and browser print/PDF export
+- In-app manual with downloadable 2D/3D JSON, CSV, and project skeletons
 - Keyboard-labelled controls, textual chart summaries, raw data access, and reduced-motion support
 
 ## Architecture

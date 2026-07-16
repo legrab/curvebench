@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "spectrometer-calibration",
+  "title": "Spectrometer calibration series",
+  "shortDescription": "An almost linear response across a molecular concentration series.",
+  "description": "Synthetic absorbance-like values showing a simple calibration relationship with mild measurement variation.",
+  "dimension": "2d",
+  "category": "molecular",
+  "tags": [
+    "calibration",
+    "absorbance",
+    "linear"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Concentration",
+      "unit": "relative"
+    },
+    "y": {
+      "key": "y",
+      "label": "Absorbance",
+      "unit": "a.u."
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 0.039568694
+    },
+    {
+      "x": 0.5,
+      "y": 0.047758024
+    },
+    {
+      "x": 1,
+      "y": 0.15960182
+    },
+    {
+      "x": 1.5,
+      "y": 0.20634047
+    },
+    {
+      "x": 2,
+      "y": 0.25498126
+    },
+    {
+      "x": 2.5,
+      "y": 0.31778174
+    },
+    {
+      "x": 3,
+      "y": 0.41586179
+    },
+    {
+      "x": 3.5,
+      "y": 0.44196352
+    },
+    {
+      "x": 4,
+      "y": 0.51492022
+    },
+    {
+      "x": 4.5,
+      "y": 0.57847383
+    },
+    {
+      "x": 5,
+      "y": 0.64901018
+    },
+    {
+      "x": 5.5,
+      "y": 0.71141777
+    },
+    {
+      "x": 6,
+      "y": 0.76955157
+    },
+    {
+      "x": 6.5,
+      "y": 0.81798365
+    },
+    {
+      "x": 7,
+      "y": 0.84164642
+    },
+    {
+      "x": 7.5,
+      "y": 0.90528825
+    },
+    {
+      "x": 8,
+      "y": 0.96832004
+    },
+    {
+      "x": 8.5,
+      "y": 1.0368451
+    },
+    {
+      "x": 9,
+      "y": 1.0964323
+    },
+    {
+      "x": 9.5,
+      "y": 1.1805696
+    },
+    {
+      "x": 10,
+      "y": 1.2137107
+    }
+  ],
+  "recommendedModels": [
+    "linear",
+    "polynomial",
+    "cubic-spline"
+  ],
+  "generation": {
+    "seed": 3804,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Linear calibration response."
+  }
+}

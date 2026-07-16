@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "molecular-melting-transition",
+  "title": "Molecular melting transition",
+  "shortDescription": "A cooperative transition between two plateaus.",
+  "description": "Synthetic fraction-unfolded values for a generic molecular transition. It is not experimental data for a real material.",
+  "dimension": "2d",
+  "category": "molecular",
+  "tags": [
+    "transition",
+    "sigmoid",
+    "melting"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Temperature",
+      "unit": "°C"
+    },
+    "y": {
+      "key": "y",
+      "label": "Transitioned fraction",
+      "unit": "fraction"
+    }
+  },
+  "points": [
+    {
+      "x": 20,
+      "y": 0.0077993011
+    },
+    {
+      "x": 22,
+      "y": 0.0082612255
+    },
+    {
+      "x": 24,
+      "y": 0.025326052
+    },
+    {
+      "x": 26,
+      "y": 0.0034757545
+    },
+    {
+      "x": 28,
+      "y": 0.041264914
+    },
+    {
+      "x": 30,
+      "y": 0.020484655
+    },
+    {
+      "x": 32,
+      "y": 0.028892477
+    },
+    {
+      "x": 34,
+      "y": 0.02142314
+    },
+    {
+      "x": 36,
+      "y": 0.065261495
+    },
+    {
+      "x": 38,
+      "y": 0.032738425
+    },
+    {
+      "x": 40,
+      "y": 0.068070596
+    },
+    {
+      "x": 42,
+      "y": 0.056852135
+    },
+    {
+      "x": 44,
+      "y": 0.078954282
+    },
+    {
+      "x": 46,
+      "y": 0.10987718
+    },
+    {
+      "x": 48,
+      "y": 0.14907571
+    },
+    {
+      "x": 50,
+      "y": 0.17381632
+    },
+    {
+      "x": 52,
+      "y": 0.24645689
+    },
+    {
+      "x": 54,
+      "y": 0.32984986
+    },
+    {
+      "x": 56,
+      "y": 0.39489389
+    },
+    {
+      "x": 58,
+      "y": 0.50584674
+    },
+    {
+      "x": 60,
+      "y": 0.59623815
+    },
+    {
+      "x": 62,
+      "y": 0.69128505
+    },
+    {
+      "x": 64,
+      "y": 0.72813054
+    },
+    {
+      "x": 66,
+      "y": 0.81372915
+    },
+    {
+      "x": 68,
+      "y": 0.86856972
+    },
+    {
+      "x": 70,
+      "y": 0.89802869
+    },
+    {
+      "x": 72,
+      "y": 0.89892626
+    },
+    {
+      "x": 74,
+      "y": 0.91876861
+    },
+    {
+      "x": 76,
+      "y": 0.94843459
+    },
+    {
+      "x": 78,
+      "y": 0.95095722
+    },
+    {
+      "x": 80,
+      "y": 0.97856053
+    },
+    {
+      "x": 82,
+      "y": 0.97979232
+    },
+    {
+      "x": 84,
+      "y": 0.97646829
+    },
+    {
+      "x": 86,
+      "y": 0.96608098
+    },
+    {
+      "x": 88,
+      "y": 0.96583815
+    },
+    {
+      "x": 90,
+      "y": 0.98607229
+    }
+  ],
+  "recommendedModels": [
+    "logistic",
+    "cubic-spline",
+    "polynomial"
+  ],
+  "generation": {
+    "seed": 4006,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Logistic cooperative transition."
+  }
+}

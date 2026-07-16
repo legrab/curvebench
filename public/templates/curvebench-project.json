@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "projectTitle": "Replace with project title",
+  "applicationVersion": "0.1.0",
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "exportedAt": "2026-01-01T00:00:00.000Z",
+  "workspace": {
+    "schemaVersion": 1,
+    "dataset": {
+      "schemaVersion": 1,
+      "id": "project-dataset",
+      "title": "Project dataset",
+      "shortDescription": "A small project dataset.",
+      "description": "Replace these points and metadata with your own values.",
+      "dimension": "2d",
+      "category": "custom",
+      "tags": ["example"],
+      "synthetic": false,
+      "sourceNote": "State the provenance of the imported values.",
+      "axes": {
+        "x": { "key": "x", "label": "Input", "unit": "" },
+        "y": { "key": "y", "label": "Output", "unit": "" }
+      },
+      "points": [
+        { "x": 0, "y": 1 },
+        { "x": 1, "y": 3 },
+        { "x": 2, "y": 5 }
+      ],
+      "recommendedModels": ["linear"]
+    },
+    "datasetSource": { "kind": "imported", "filename": "project-dataset.json" },
+    "models": [],
+    "selectedModelId": null,
+    "leftCollapsed": false,
+    "rightCollapsed": false,
+    "residualsOpen": false,
+    "tableOpen": false,
+    "tutorialOpen": false,
+    "showSurface": false
+  }
+}

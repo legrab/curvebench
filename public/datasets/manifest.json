@@ -459,6 +459,260 @@
       "path": "/datasets/2d/bouncing-ball.json"
     },
     {
+      "id": "molecular-bond-potential",
+      "title": "Diatomic molecular bond potential",
+      "shortDescription": "A steep repulsive wall, energy minimum, and gradual dissociation tail.",
+      "dimension": "2d",
+      "category": "molecular",
+      "tags": [
+        "bond",
+        "potential",
+        "morse",
+        "asymmetric"
+      ],
+      "pointCount": 45,
+      "recommendedModels": [
+        "cubic-spline",
+        "polynomial",
+        "custom-2d"
+      ],
+      "path": "/datasets/2d/molecular-bond-potential.json"
+    },
+    {
+      "id": "ligand-binding-isotherm",
+      "title": "Molecular binding saturation",
+      "shortDescription": "Rapid initial binding that approaches a finite occupancy plateau.",
+      "dimension": "2d",
+      "category": "molecular",
+      "tags": [
+        "binding",
+        "saturation",
+        "isotherm"
+      ],
+      "pointCount": 37,
+      "recommendedModels": [
+        "saturation",
+        "cubic-spline",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/ligand-binding-isotherm.json"
+    },
+    {
+      "id": "spectrometer-calibration",
+      "title": "Spectrometer calibration series",
+      "shortDescription": "An almost linear response across a molecular concentration series.",
+      "dimension": "2d",
+      "category": "molecular",
+      "tags": [
+        "calibration",
+        "absorbance",
+        "linear"
+      ],
+      "pointCount": 21,
+      "recommendedModels": [
+        "linear",
+        "polynomial",
+        "cubic-spline"
+      ],
+      "path": "/datasets/2d/spectrometer-calibration.json"
+    },
+    {
+      "id": "molecular-vibration-ringdown",
+      "title": "Molecular vibration ring-down",
+      "shortDescription": "A damped oscillation returning toward equilibrium.",
+      "dimension": "2d",
+      "category": "molecular",
+      "tags": [
+        "vibration",
+        "damping",
+        "periodic"
+      ],
+      "pointCount": 81,
+      "recommendedModels": [
+        "damped-sinusoid",
+        "cubic-spline",
+        "custom-2d"
+      ],
+      "path": "/datasets/2d/molecular-vibration-ringdown.json"
+    },
+    {
+      "id": "molecular-melting-transition",
+      "title": "Molecular melting transition",
+      "shortDescription": "A cooperative transition between two plateaus.",
+      "dimension": "2d",
+      "category": "molecular",
+      "tags": [
+        "transition",
+        "sigmoid",
+        "melting"
+      ],
+      "pointCount": 36,
+      "recommendedModels": [
+        "logistic",
+        "cubic-spline",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/molecular-melting-transition.json"
+    },
+    {
+      "id": "sourdough-rise-and-fall",
+      "title": "Sourdough starter rise and fall",
+      "shortDescription": "Slow activation, rapid rise, a rounded peak, and gradual collapse.",
+      "dimension": "2d",
+      "category": "hobby",
+      "tags": [
+        "baking",
+        "fermentation",
+        "peak",
+        "asymmetric"
+      ],
+      "pointCount": 49,
+      "recommendedModels": [
+        "cubic-spline",
+        "polynomial",
+        "pseudo-voigt"
+      ],
+      "path": "/datasets/2d/sourdough-rise-and-fall.json"
+    },
+    {
+      "id": "model-rocket-flight",
+      "title": "Model rocket altitude",
+      "shortDescription": "Powered ascent, coasting peak, and parachute-assisted descent.",
+      "dimension": "2d",
+      "category": "hobby",
+      "tags": [
+        "rocket",
+        "flight",
+        "piecewise"
+      ],
+      "pointCount": 49,
+      "recommendedModels": [
+        "cubic-spline",
+        "piecewise-linear",
+        "polynomial"
+      ],
+      "path": "/datasets/2d/model-rocket-flight.json"
+    },
+    {
+      "id": "aquarium-nitrate-cycle",
+      "title": "Aquarium nitrate between water changes",
+      "shortDescription": "Repeated accumulation followed by sharp weekly reductions.",
+      "dimension": "2d",
+      "category": "hobby",
+      "tags": [
+        "aquarium",
+        "cycle",
+        "sawtooth",
+        "piecewise"
+      ],
+      "pointCount": 57,
+      "recommendedModels": [
+        "piecewise-linear",
+        "cubic-spline",
+        "sinusoid"
+      ],
+      "path": "/datasets/2d/aquarium-nitrate-cycle.json"
+    },
+    {
+      "id": "civilization-population-history",
+      "title": "Fictional civilization population history",
+      "shortDescription": "Founding growth, a long plateau, decline, and partial recovery.",
+      "dimension": "2d",
+      "category": "society",
+      "tags": [
+        "population",
+        "civilization",
+        "growth",
+        "decline"
+      ],
+      "pointCount": 51,
+      "recommendedModels": [
+        "cubic-spline",
+        "polynomial",
+        "piecewise-linear"
+      ],
+      "path": "/datasets/2d/civilization-population-history.json"
+    },
+    {
+      "id": "board-game-average",
+      "title": "Board-game dice average settling",
+      "shortDescription": "A running average wanders early and settles as more turns are played.",
+      "dimension": "2d",
+      "category": "hobby",
+      "tags": [
+        "games",
+        "probability",
+        "convergence",
+        "noise"
+      ],
+      "pointCount": 60,
+      "recommendedModels": [
+        "cubic-spline",
+        "power-law",
+        "custom-2d"
+      ],
+      "path": "/datasets/2d/board-game-average.json"
+    },
+    {
+      "id": "tilted-tabletop",
+      "title": "Simple tilted tabletop",
+      "shortDescription": "A small, noise-free grid lying exactly on a plane.",
+      "dimension": "3d",
+      "category": "teaching",
+      "tags": [
+        "simple",
+        "plane",
+        "beginner"
+      ],
+      "pointCount": 25,
+      "recommendedModels": [
+        "plane-3d",
+        "quadratic-surface",
+        "custom-3d"
+      ],
+      "path": "/datasets/3d/tilted-tabletop.json"
+    },
+    {
+      "id": "simple-mixing-bowl",
+      "title": "Simple symmetric bowl",
+      "shortDescription": "A small, noise-free quadratic bowl with its minimum at the centre.",
+      "dimension": "3d",
+      "category": "teaching",
+      "tags": [
+        "simple",
+        "quadratic",
+        "bowl",
+        "beginner"
+      ],
+      "pointCount": 25,
+      "recommendedModels": [
+        "quadratic-surface",
+        "plane-3d",
+        "custom-3d"
+      ],
+      "path": "/datasets/3d/simple-mixing-bowl.json"
+    },
+    {
+      "id": "multiplication-table-surface",
+      "title": "Multiplication-table surface",
+      "shortDescription": "A tiny exact grid where z is simply x multiplied by y.",
+      "dimension": "3d",
+      "category": "teaching",
+      "tags": [
+        "simple",
+        "interaction",
+        "saddle",
+        "beginner"
+      ],
+      "pointCount": 25,
+      "recommendedModels": [
+        "quadratic-surface",
+        "plane-3d",
+        "custom-3d"
+      ],
+      "path": "/datasets/3d/multiplication-table-surface.json"
+    },
+    {
       "id": "heated-metal-plate",
       "title": "Temperature across a heated metal plate",
       "shortDescription": "A warm source with cooler edges and slight asymmetry.",

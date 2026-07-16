@@ -6,6 +6,7 @@ import { ModelPanel } from "./features/models/ModelPanel";
 import { MetricsTable } from "./features/models/MetricsTable";
 import { ResidualPlot } from "./components/ResidualPlot";
 import { Tutorial } from "./features/workspace/Tutorial";
+import { ManualPage } from "./features/manual/ManualPage";
 import { workspaceReducer } from "./features/workspace/reducer";
 import { createDefaultWorkspace } from "./features/workspace/default-workspace";
 import type { WorkspaceAction, WorkspaceState } from "./features/workspace/types";
@@ -40,8 +41,28 @@ export default function App() {
     kind: "status",
   });
   const [loading, setLoading] = useState(true);
+  const [view, setView] = useState<"workspace" | "manual">(() =>
+    window.location.hash === "#manual" ? "manual" : "workspace",
+  );
   const projectInput = useRef<HTMLInputElement>(null);
   const plotRef = useRef<PlotHandle>(null);
+
+  useEffect(() => {
+    const handleHashChange = () =>
+      setView(window.location.hash === "#manual" ? "manual" : "workspace");
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
+  function showManual() {
+    window.location.hash = "manual";
+    setView("manual");
+  }
+
+  function showWorkspace() {
+    window.history.pushState(null, "", `${window.location.pathname}${window.location.search}`);
+    setView("workspace");
+  }
 
   function dispatch(action: WorkspaceAction) {
     setWorkspace((current) => (current ? workspaceReducer(current, action) : current));
@@ -392,9 +413,30 @@ export default function App() {
               </button>
             </div>
           </details>
-          <button type="button" onClick={() => dispatch({ type: "set-tutorial", open: true })}>
-            Help
-          </button>
+          <details className="menu">
+            <summary>Help</summary>
+            <div className="menu-popover">
+              <button
+                type="button"
+                onClick={(event) => {
+                  event.currentTarget.closest("details")?.removeAttribute("open");
+                  showWorkspace();
+                  dispatch({ type: "set-tutorial", open: true });
+                }}
+              >
+                Getting-started exercise
+              </button>
+              <button
+                type="button"
+                onClick={(event) => {
+                  event.currentTarget.closest("details")?.removeAttribute("open");
+                  showManual();
+                }}
+              >
+                User manual &amp; import formats
+              </button>
+            </div>
+          </details>
           <button
             type="button"
             onClick={() => {
@@ -408,189 +450,193 @@ export default function App() {
         </nav>
       </header>
 
-      <div className={layoutClass}>
-        {workspace.leftCollapsed ? (
-          <button
-            className="panel-restore left"
-            type="button"
-            onClick={() => dispatch({ type: "toggle-left" })}
-            aria-label="Expand dataset panel"
-          >
-            ›
-          </button>
-        ) : (
-          <div className="panel-column">
+      {view === "manual" ? (
+        <ManualPage onBack={showWorkspace} />
+      ) : (
+        <div className={layoutClass}>
+          {workspace.leftCollapsed ? (
             <button
-              className="panel-collapse"
+              className="panel-restore left"
               type="button"
               onClick={() => dispatch({ type: "toggle-left" })}
+              aria-label="Expand dataset panel"
             >
-              ‹ Collapse datasets
+              ›
             </button>
-            <DatasetPanel
-              manifest={manifest}
-              current={workspace.dataset}
-              savedDatasets={savedDatasets}
-              onLoadBundled={(entry) => void loadEntry(entry)}
-              onLoadDataset={(dataset, source, filename, expression) =>
-                loadDataset(
-                  dataset,
-                  source === "saved"
-                    ? { kind: "saved", id: dataset.id }
-                    : source === "generated"
-                      ? { kind: "generated", expression: expression ?? "" }
-                      : { kind: "imported", filename },
-                )
-              }
-              onSaveCurrent={() => {
-                try {
-                  setSavedDatasets(saveDataset(workspace.dataset));
-                  notify(`Saved ${workspace.dataset.title} in this browser.`);
-                } catch (error) {
-                  notify(messageOf(error), "error");
-                }
-              }}
-              onDeleteSaved={(id) => {
-                if (window.confirm("Delete this saved dataset from the browser library?"))
-                  setSavedDatasets(removeSavedDataset(id));
-              }}
-              onExportDataset={exportDataset}
-              notify={notify}
-            />
-          </div>
-        )}
-
-        <main className="main-workspace" id="print-report">
-          {workspace.tutorialOpen ? (
-            <Tutorial onClose={() => dispatch({ type: "set-tutorial", open: false })} />
-          ) : null}
-          <section className="graph-section" aria-labelledby="graph-heading">
-            <div className="section-heading">
-              <div>
-                <h2 id="graph-heading">Graph</h2>
-                <p>{workspace.dataset.shortDescription}</p>
-              </div>
-              {workspace.dataset.dimension === "3d" ? (
-                <label className="inline-check">
-                  <input
-                    type="checkbox"
-                    checked={workspace.showSurface}
-                    onChange={(event) =>
-                      dispatch({ type: "set-surface", show: event.target.checked })
-                    }
-                  />
-                  Connect regular-grid measurements
-                </label>
-              ) : null}
-            </div>
-            <Plot
-              ref={plotRef}
-              dataset={workspace.dataset}
-              models={evaluatedModels}
-              showSurface={workspace.showSurface}
-            />
-            <p className="chart-summary">
-              Measured values are shown as points.{" "}
-              {evaluatedModels.filter((model) => model.active.visible && !model.error).length} model
-              overlays are currently visible. Exact values are available in the data table and
-              metrics below.
-            </p>
-          </section>
-
-          <section className="analysis-section" aria-labelledby="analysis-heading">
-            <h2 id="analysis-heading">Model comparison</h2>
-            <MetricsTable models={evaluatedModels} />
-          </section>
-
-          <section className="collapsible-section">
-            <button
-              type="button"
-              className="section-toggle"
-              aria-expanded={workspace.residualsOpen}
-              onClick={() => dispatch({ type: "set-residuals", open: !workspace.residualsOpen })}
-            >
-              <span>Residuals</span>
-              <span>{workspace.residualsOpen ? "−" : "+"}</span>
-            </button>
-            {workspace.residualsOpen ? (
-              <ResidualPlot dataset={workspace.dataset} model={residualModel} />
-            ) : null}
-          </section>
-
-          <section className="collapsible-section">
-            <button
-              type="button"
-              className="section-toggle"
-              aria-expanded={workspace.tableOpen}
-              onClick={() => dispatch({ type: "set-table", open: !workspace.tableOpen })}
-            >
-              <span>Measured data table</span>
-              <span>{workspace.tableOpen ? "−" : "+"}</span>
-            </button>
-            {workspace.tableOpen ? (
-              <DataTable
-                dataset={workspace.dataset}
-                onApply={(dataset) => {
-                  dispatch({
-                    type: "set-dataset",
+          ) : (
+            <div className="panel-column">
+              <button
+                className="panel-collapse"
+                type="button"
+                onClick={() => dispatch({ type: "toggle-left" })}
+              >
+                ‹ Collapse datasets
+              </button>
+              <DatasetPanel
+                manifest={manifest}
+                current={workspace.dataset}
+                savedDatasets={savedDatasets}
+                onLoadBundled={(entry) => void loadEntry(entry)}
+                onLoadDataset={(dataset, source, filename, expression) =>
+                  loadDataset(
                     dataset,
-                    source: workspace.datasetSource,
-                    models: workspace.models.map((model) => ({
-                      ...model,
-                      fitStatus: "idle",
-                      fitMessage: "Dataset changed; refit this model.",
-                    })),
-                  });
-                  notify(
-                    "Dataset edits applied. Existing model parameters were retained but fit statuses were invalidated.",
-                  );
+                    source === "saved"
+                      ? { kind: "saved", id: dataset.id }
+                      : source === "generated"
+                        ? { kind: "generated", expression: expression ?? "" }
+                        : { kind: "imported", filename },
+                  )
+                }
+                onSaveCurrent={() => {
+                  try {
+                    setSavedDatasets(saveDataset(workspace.dataset));
+                    notify(`Saved ${workspace.dataset.title} in this browser.`);
+                  } catch (error) {
+                    notify(messageOf(error), "error");
+                  }
                 }}
+                onDeleteSaved={(id) => {
+                  if (window.confirm("Delete this saved dataset from the browser library?"))
+                    setSavedDatasets(removeSavedDataset(id));
+                }}
+                onExportDataset={exportDataset}
+                notify={notify}
               />
+            </div>
+          )}
+
+          <main className="main-workspace" id="print-report">
+            {workspace.tutorialOpen ? (
+              <Tutorial onClose={() => dispatch({ type: "set-tutorial", open: false })} />
             ) : null}
-          </section>
+            <section className="graph-section" aria-labelledby="graph-heading">
+              <div className="section-heading">
+                <div>
+                  <h2 id="graph-heading">Graph</h2>
+                  <p>{workspace.dataset.shortDescription}</p>
+                </div>
+                {workspace.dataset.dimension === "3d" ? (
+                  <label className="inline-check">
+                    <input
+                      type="checkbox"
+                      checked={workspace.showSurface}
+                      onChange={(event) =>
+                        dispatch({ type: "set-surface", show: event.target.checked })
+                      }
+                    />
+                    Connect regular-grid measurements
+                  </label>
+                ) : null}
+              </div>
+              <Plot
+                ref={plotRef}
+                dataset={workspace.dataset}
+                models={evaluatedModels}
+                showSurface={workspace.showSurface}
+              />
+              <p className="chart-summary">
+                Measured values are shown as points.{" "}
+                {evaluatedModels.filter((model) => model.active.visible && !model.error).length}{" "}
+                model overlays are currently visible. Exact values are available in the data table
+                and metrics below.
+              </p>
+            </section>
 
-          <footer className="report-footer">
-            <span>Curvebench {__APP_VERSION__}</span>
-            <span>
-              Synthetic educational datasets are not scientific, medical, safety, or engineering
-              reference data.
-            </span>
-          </footer>
-        </main>
+            <section className="analysis-section" aria-labelledby="analysis-heading">
+              <h2 id="analysis-heading">Model comparison</h2>
+              <MetricsTable models={evaluatedModels} />
+            </section>
 
-        {workspace.rightCollapsed ? (
-          <button
-            className="panel-restore right"
-            type="button"
-            onClick={() => dispatch({ type: "toggle-right" })}
-            aria-label="Expand model panel"
-          >
-            ‹
-          </button>
-        ) : (
-          <div className="panel-column">
+            <section className="collapsible-section">
+              <button
+                type="button"
+                className="section-toggle"
+                aria-expanded={workspace.residualsOpen}
+                onClick={() => dispatch({ type: "set-residuals", open: !workspace.residualsOpen })}
+              >
+                <span>Residuals</span>
+                <span>{workspace.residualsOpen ? "−" : "+"}</span>
+              </button>
+              {workspace.residualsOpen ? (
+                <ResidualPlot dataset={workspace.dataset} model={residualModel} />
+              ) : null}
+            </section>
+
+            <section className="collapsible-section">
+              <button
+                type="button"
+                className="section-toggle"
+                aria-expanded={workspace.tableOpen}
+                onClick={() => dispatch({ type: "set-table", open: !workspace.tableOpen })}
+              >
+                <span>Measured data table</span>
+                <span>{workspace.tableOpen ? "−" : "+"}</span>
+              </button>
+              {workspace.tableOpen ? (
+                <DataTable
+                  dataset={workspace.dataset}
+                  onApply={(dataset) => {
+                    dispatch({
+                      type: "set-dataset",
+                      dataset,
+                      source: workspace.datasetSource,
+                      models: workspace.models.map((model) => ({
+                        ...model,
+                        fitStatus: "idle",
+                        fitMessage: "Dataset changed; refit this model.",
+                      })),
+                    });
+                    notify(
+                      "Dataset edits applied. Existing model parameters were retained but fit statuses were invalidated.",
+                    );
+                  }}
+                />
+              ) : null}
+            </section>
+
+            <footer className="report-footer">
+              <span>Curvebench {__APP_VERSION__}</span>
+              <span>
+                Synthetic educational datasets are not scientific, medical, safety, or engineering
+                reference data.
+              </span>
+            </footer>
+          </main>
+
+          {workspace.rightCollapsed ? (
             <button
-              className="panel-collapse"
+              className="panel-restore right"
               type="button"
               onClick={() => dispatch({ type: "toggle-right" })}
+              aria-label="Expand model panel"
             >
-              Collapse models ›
+              ‹
             </button>
-            <ModelPanel
-              dataset={workspace.dataset}
-              models={workspace.models}
-              evaluated={evaluatedModels}
-              selectedModelId={workspace.selectedModelId}
-              onAdd={(model) => dispatch({ type: "add-model", model })}
-              onUpdate={(id, update) => dispatch({ type: "update-model", id, update })}
-              onRemove={(id) => dispatch({ type: "remove-model", id })}
-              onFit={fitModel}
-              onSelect={(id) => dispatch({ type: "select-model", id })}
-              notify={notify}
-            />
-          </div>
-        )}
-      </div>
+          ) : (
+            <div className="panel-column">
+              <button
+                className="panel-collapse"
+                type="button"
+                onClick={() => dispatch({ type: "toggle-right" })}
+              >
+                Collapse models ›
+              </button>
+              <ModelPanel
+                dataset={workspace.dataset}
+                models={workspace.models}
+                evaluated={evaluatedModels}
+                selectedModelId={workspace.selectedModelId}
+                onAdd={(model) => dispatch({ type: "add-model", model })}
+                onUpdate={(id, update) => dispatch({ type: "update-model", id, update })}
+                onRemove={(id) => dispatch({ type: "remove-model", id })}
+                onFit={fitModel}
+                onSelect={(id) => dispatch({ type: "select-model", id })}
+                notify={notify}
+              />
+            </div>
+          )}
+        </div>
+      )}
       <div
         className={`status-region ${status.kind}`}
         role={status.kind === "error" ? "alert" : "status"}

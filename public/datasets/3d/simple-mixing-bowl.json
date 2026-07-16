@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "simple-mixing-bowl",
+  "title": "Simple symmetric bowl",
+  "shortDescription": "A small, noise-free quadratic bowl with its minimum at the centre.",
+  "description": "A beginner-friendly 3D grid showing curvature equally in x and y.",
+  "dimension": "3d",
+  "category": "teaching",
+  "tags": [
+    "simple",
+    "quadratic",
+    "bowl",
+    "beginner"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "x position",
+      "unit": "steps"
+    },
+    "y": {
+      "key": "y",
+      "label": "y position",
+      "unit": "steps"
+    },
+    "z": {
+      "key": "z",
+      "label": "Height",
+      "unit": "steps"
+    }
+  },
+  "points": [
+    {
+      "x": -2,
+      "y": -2,
+      "z": 8
+    },
+    {
+      "x": -1,
+      "y": -2,
+      "z": 5
+    },
+    {
+      "x": 0,
+      "y": -2,
+      "z": 4
+    },
+    {
+      "x": 1,
+      "y": -2,
+      "z": 5
+    },
+    {
+      "x": 2,
+      "y": -2,
+      "z": 8
+    },
+    {
+      "x": -2,
+      "y": -1,
+      "z": 5
+    },
+    {
+      "x": -1,
+      "y": -1,
+      "z": 2
+    },
+    {
+      "x": 0,
+      "y": -1,
+      "z": 1
+    },
+    {
+      "x": 1,
+      "y": -1,
+      "z": 2
+    },
+    {
+      "x": 2,
+      "y": -1,
+      "z": 5
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 4
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 1
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 4
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 5
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 2
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 1
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 2
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 5
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 8
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 5
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 4
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 5
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 8
+    }
+  ],
+  "recommendedModels": [
+    "quadratic-surface",
+    "plane-3d",
+    "custom-3d"
+  ],
+  "generation": {
+    "seed": 5302,
+    "noiseDescription": "No added noise.",
+    "formulaNote": "Exact paraboloid z = x² + y²."
+  }
+}

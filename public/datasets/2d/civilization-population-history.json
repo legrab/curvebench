@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "id": "civilization-population-history",
+  "title": "Fictional civilization population history",
+  "shortDescription": "Founding growth, a long plateau, decline, and partial recovery.",
+  "description": "A synthetic population history for an imaginary civilization, designed to resist a single monotonic growth curve.",
+  "dimension": "2d",
+  "category": "society",
+  "tags": [
+    "population",
+    "civilization",
+    "growth",
+    "decline"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Years since founding",
+      "unit": "years"
+    },
+    "y": {
+      "key": "y",
+      "label": "Population",
+      "unit": "thousands"
+    }
+  },
+  "points": [
+    {
+      "x": 0,
+      "y": 11.395932
+    },
+    {
+      "x": 10,
+      "y": 14.176812
+    },
+    {
+      "x": 20,
+      "y": 13.682564
+    },
+    {
+      "x": 30,
+      "y": 16.477448
+    },
+    {
+      "x": 40,
+      "y": 19.354908
+    },
+    {
+      "x": 50,
+      "y": 19.269785
+    },
+    {
+      "x": 60,
+      "y": 23.205708
+    },
+    {
+      "x": 70,
+      "y": 34.878972
+    },
+    {
+      "x": 80,
+      "y": 34.343019
+    },
+    {
+      "x": 90,
+      "y": 40.184351
+    },
+    {
+      "x": 100,
+      "y": 46.578478
+    },
+    {
+      "x": 110,
+      "y": 50.110565
+    },
+    {
+      "x": 120,
+      "y": 55.563094
+    },
+    {
+      "x": 130,
+      "y": 63.242277
+    },
+    {
+      "x": 140,
+      "y": 67.816836
+    },
+    {
+      "x": 150,
+      "y": 72.034523
+    },
+    {
+      "x": 160,
+      "y": 76.570705
+    },
+    {
+      "x": 170,
+      "y": 81.067835
+    },
+    {
+      "x": 180,
+      "y": 86.421147
+    },
+    {
+      "x": 190,
+      "y": 88.453509
+    },
+    {
+      "x": 200,
+      "y": 94.354975
+    },
+    {
+      "x": 210,
+      "y": 93.245013
+    },
+    {
+      "x": 220,
+      "y": 99.448476
+    },
+    {
+      "x": 230,
+      "y": 98.719639
+    },
+    {
+      "x": 240,
+      "y": 102.16132
+    },
+    {
+      "x": 250,
+      "y": 99.117865
+    },
+    {
+      "x": 260,
+      "y": 99.264314
+    },
+    {
+      "x": 270,
+      "y": 100.72993
+    },
+    {
+      "x": 280,
+      "y": 103.71927
+    },
+    {
+      "x": 290,
+      "y": 99.083567
+    },
+    {
+      "x": 300,
+      "y": 92.868785
+    },
+    {
+      "x": 310,
+      "y": 89.509127
+    },
+    {
+      "x": 320,
+      "y": 86.576461
+    },
+    {
+      "x": 330,
+      "y": 77.154785
+    },
+    {
+      "x": 340,
+      "y": 70.28768
+    },
+    {
+      "x": 350,
+      "y": 65.526273
+    },
+    {
+      "x": 360,
+      "y": 61.695194
+    },
+    {
+      "x": 370,
+      "y": 56.54246
+    },
+    {
+      "x": 380,
+      "y": 52.424427
+    },
+    {
+      "x": 390,
+      "y": 56.465896
+    },
+    {
+      "x": 400,
+      "y": 54.620367
+    },
+    {
+      "x": 410,
+      "y": 57.539214
+    },
+    {
+      "x": 420,
+      "y": 59.289885
+    },
+    {
+      "x": 430,
+      "y": 61.464198
+    },
+    {
+      "x": 440,
+      "y": 63.785065
+    },
+    {
+      "x": 450,
+      "y": 66.978694
+    },
+    {
+      "x": 460,
+      "y": 74.305
+    },
+    {
+      "x": 470,
+      "y": 74.167085
+    },
+    {
+      "x": 480,
+      "y": 76.93705
+    },
+    {
+      "x": 490,
+      "y": 73.531273
+    },
+    {
+      "x": 500,
+      "y": 77.135826
+    }
+  ],
+  "recommendedModels": [
+    "cubic-spline",
+    "polynomial",
+    "piecewise-linear"
+  ],
+  "generation": {
+    "seed": 5010,
+    "noiseDescription": "Mild deterministic measurement noise.",
+    "formulaNote": "Three logistic phases representing growth, decline, and recovery."
+  }
+}

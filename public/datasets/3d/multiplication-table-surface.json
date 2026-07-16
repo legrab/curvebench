@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "multiplication-table-surface",
+  "title": "Multiplication-table surface",
+  "shortDescription": "A tiny exact grid where z is simply x multiplied by y.",
+  "description": "A transparent 3D interaction example with positive and negative quadrants.",
+  "dimension": "3d",
+  "category": "teaching",
+  "tags": [
+    "simple",
+    "interaction",
+    "saddle",
+    "beginner"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "x factor",
+      "unit": ""
+    },
+    "y": {
+      "key": "y",
+      "label": "y factor",
+      "unit": ""
+    },
+    "z": {
+      "key": "z",
+      "label": "Product",
+      "unit": ""
+    }
+  },
+  "points": [
+    {
+      "x": -2,
+      "y": -2,
+      "z": 4
+    },
+    {
+      "x": -1,
+      "y": -2,
+      "z": 2
+    },
+    {
+      "x": 0,
+      "y": -2,
+      "z": 0
+    },
+    {
+      "x": 1,
+      "y": -2,
+      "z": -2
+    },
+    {
+      "x": 2,
+      "y": -2,
+      "z": -4
+    },
+    {
+      "x": -2,
+      "y": -1,
+      "z": 2
+    },
+    {
+      "x": -1,
+      "y": -1,
+      "z": 1
+    },
+    {
+      "x": 0,
+      "y": -1,
+      "z": 0
+    },
+    {
+      "x": 1,
+      "y": -1,
+      "z": -1
+    },
+    {
+      "x": 2,
+      "y": -1,
+      "z": -2
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": -2
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": -1
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 2
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": -4
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": -2
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 0
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 2
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 4
+    }
+  ],
+  "recommendedModels": [
+    "quadratic-surface",
+    "plane-3d",
+    "custom-3d"
+  ],
+  "generation": {
+    "seed": 5403,
+    "noiseDescription": "No added noise.",
+    "formulaNote": "Exact interaction surface z = x·y."
+  }
+}

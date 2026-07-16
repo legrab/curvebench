@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "tilted-tabletop",
+  "title": "Simple tilted tabletop",
+  "shortDescription": "A small, noise-free grid lying exactly on a plane.",
+  "description": "A deliberately simple first 3D example where height changes steadily in both directions.",
+  "dimension": "3d",
+  "category": "teaching",
+  "tags": [
+    "simple",
+    "plane",
+    "beginner"
+  ],
+  "synthetic": true,
+  "sourceNote": "Generated for Curvebench. Not reference data.",
+  "axes": {
+    "x": {
+      "key": "x",
+      "label": "Left-right position",
+      "unit": "steps"
+    },
+    "y": {
+      "key": "y",
+      "label": "Front-back position",
+      "unit": "steps"
+    },
+    "z": {
+      "key": "z",
+      "label": "Height",
+      "unit": "steps"
+    }
+  },
+  "points": [
+    {
+      "x": -2,
+      "y": -2,
+      "z": 2.3
+    },
+    {
+      "x": -1,
+      "y": -2,
+      "z": 3.1
+    },
+    {
+      "x": 0,
+      "y": -2,
+      "z": 3.9
+    },
+    {
+      "x": 1,
+      "y": -2,
+      "z": 4.7
+    },
+    {
+      "x": 2,
+      "y": -2,
+      "z": 5.5
+    },
+    {
+      "x": -2,
+      "y": -1,
+      "z": 1.85
+    },
+    {
+      "x": -1,
+      "y": -1,
+      "z": 2.65
+    },
+    {
+      "x": 0,
+      "y": -1,
+      "z": 3.45
+    },
+    {
+      "x": 1,
+      "y": -1,
+      "z": 4.25
+    },
+    {
+      "x": 2,
+      "y": -1,
+      "z": 5.05
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 1.4
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 2.2
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 3
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 3.8
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 4.6
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 0.95
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 1.75
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 2.55
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 3.35
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 4.15
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 0.5
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 1.3
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 2.1
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 2.9
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 3.7
+    }
+  ],
+  "recommendedModels": [
+    "plane-3d",
+    "quadratic-surface",
+    "custom-3d"
+  ],
+  "generation": {
+    "seed": 5201,
+    "noiseDescription": "No added noise.",
+    "formulaNote": "Exact plane z = 3 + 0.8x - 0.45y."
+  }
+}

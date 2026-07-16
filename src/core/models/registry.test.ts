@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { createActiveModel, evaluateActiveModel } from "./helpers";
-import { createCustomParameters, fitActiveModel, modelDefinitions } from "./registry";
+import {
+  createCustomParameters,
+  fitActiveModel,
+  getModelDefinition,
+  modelDefinitions,
+} from "./registry";
 import { make2D, make3D } from "../../test/fixtures";
 
 describe("model registry", () => {
@@ -37,4 +42,20 @@ describe("model registry", () => {
       expect(evaluated.traces.length).toBeGreaterThan(0);
     },
   );
+
+  it("recovers a simple saturation curve", () => {
+    const dataset = make2D();
+    dataset.points = Array.from({ length: 25 }, (_, index) => {
+      const x = index / 2;
+      return { x, y: 0.15 + (2.4 * x) / (1.8 + x) };
+    });
+    const definition = getModelDefinition("saturation");
+    const active = createActiveModel(definition, dataset);
+    const fit = fitActiveModel(definition, dataset, active.params, active.bounds);
+
+    expect(fit.converged).toBe(true);
+    expect(fit.params.b).toBeCloseTo(0.15, 4);
+    expect(fit.params.V).toBeCloseTo(2.4, 4);
+    expect(fit.params.K).toBeCloseTo(1.8, 4);
+  });
 });
